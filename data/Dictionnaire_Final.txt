@@ -1,0 +1,1191 @@
+Nom	Descriptif et modalités	Années
+ABILITY	Comment qualifieriez-vous votre propre compétence pour utiliser un ordinateur ?	2009       2013
+	1- Très compétent	
+	2- Assez compétent	
+	3- Pas très compétent	
+	4- Pas du tout compétent	
+	5- Ne sait pas / Ne répond pas	
+ACTUMED1	Quel média permet le mieux de suivre l'actualité ?	2008       2012       2016
+	1- Les livres	
+	2- La télévision	
+	3- La radio	
+	4- Internet	
+	5- Les réseaux sociaux	
+	6- La presse écrite	
+	7- Ne sait pas / Ne répond pas	
+ACTUMED2	Quel média permet le mieux de comprendre l'actualité ?	2008       2012       2016
+	1- Les livres	
+	2- La télévision	
+	3- La radio	
+	4- Internet	
+	5- Les réseaux sociaux	
+	6- La presse écrite	
+	7- Ne sait pas / Ne répond pas	
+ADM_INTERNET	Avez-vous effectué des démarches administratives ou fiscales par Internet ? (12 derniers mois)	2007
+	1- Oui	
+	2- Non	
+AGE6FUZ	Âge (6 modalités)	2007 2008 2009 2010 2011 2012 2013 2014 2015 2016
+	1- 12-17 ans	
+	2- 18-24 ans	
+	3- 25-39 ans	
+	4- 40-59 ans	
+	5- 60-69 ans	
+	6- 70 ans et plus	
+AGGLO5	Taille d'agglomération (5 modalités)	2007 2008 2009 2010 2011 2012 2013 2014 2015 2016
+	1- moins de 2.000 habitants	
+	2- de 2.000 à 20.000 habitants	
+	3- de 20.000 à 100.000 habitants	
+	4- 100.000 habitants et plus	
+	5- Paris et agglomération parisienne	
+ALLMOBI	Vous connectez-vous à Internet à domicile avec un mobile, une tablette ou un ordinateur sur le réseau mobile ?	2016
+ex MOBIMOBI+ORDICLE3	1- Oui	
+	2- Non	
+BLOG	Avez-vous créé un blog ou un site personnel sur Internet ? (12 derniers mois)	2007 2008
+	1- Oui	
+	2- Non	
+CHARTE1	Serait-il nécessaire d'instaurer une charte pour limiter l'usage professionnel des TIC hors du travail ?	2013
+	1- Oui	
+	2- Non	
+CHARTE2	Serait-il nécessaire d'instaurer une charte pour limiter l'usage personnel des TIC au travail ?	2013
+	1- Oui	
+	2- Non	
+CHEAP_ECO	Grâce à internet, économisez-vous car les produits sont moins chers ?	2008
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+CHOIFAI1	Choix FAI : plate-forme vidéos à la demande ?	2012
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+CHOIFAI2	Choix FAI : bouquet télévision ?	2012
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+CHOIFAI3	Choix FAI : débit proposé ?	2012
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+CHOIFAI4	Choix FAI : qualité des services / image de marque ?	2012
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+CHOIFAI5	Choix FAI : destinations abonnement téléphonique ?	2012
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+CHOIFAI6	Choix FAI : services inclus dans box ?	2012
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+CHOIFAI7	Choix FAI : autre ?	2012
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+CLE_WEB	Disposez-vous d'une clé internet ?	2011 2012 2013
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+CONFWEB	Avez-vous confiance dans les avis qui sont émis par ces utilisateurs ? [sur internet, notes/évaluations/commentaires]	2015
+	1- Très confiance	
+	2- Assez confiance	
+	3- Peu confiance	
+	4- Pas du tout confiance	
+	5- Ne sait pas / Ne répond pas	
+CRITERE_ORDI	Quel est le critère le plus important pour l'achat d'un ordinateur ? (hors prix)	2009
+	1- La marque	
+	2- La consommation d'énergie	
+	3- La capacité de mémoire	
+	4- Les logiciels qui sont pré-installés	
+	5- La rapidité	
+	6- Les possibilités de recyclage du produit	
+	7- Le service après-vente	
+	8- Aucun de ces critères	
+	9- Ne sait pas / Ne répond pas	
+DELAY_MOB	Avez-vous repoussé l'achat d'un téléphone mobile ces derniers mois ?	2009
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+DELAY_ORDI	Avez-vous repoussé l'achat d'un ordinateur dans les derniers mois ?	2009
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+DIFFMOB	Eprouvez-vous des difficultés à passer des appels, envoyer/recevoir SMS sur votre mobile à votre domicile?	2016
+	1- Oui, très souvent	
+	2- Oui, assez souvent	
+	3- Non, assez peu souvent	
+	4- Non, jamais	
+	5- Ne sait pas / Ne répond pas	
+DIPL5	Niveau de diplôme	2007 2008 2009 2010 2011 2012 2013 2014 2015 2016
+	1- Aucun, cep	
+	2- BEPC	
+	3- Bac	
+	4- Diplôme du supérieur	
+	5- Individu 12-17 ans	
+DISTHOME	Pensez-vous utiliser à l'avenir des objets de domotique à distance?	2011       2015
+	1- Oui, et je le fais déjà	
+	2- Oui, et je le ferai probablement à l'avenir	
+	3- Non, je ne le ferai probablement pas à l'avenir	
+	4- Ne sait pas / Ne répond pas	
+ECHANTIL	Sur-échantillon Arcep zones peu denses [2016]	2016
+	0- Non	
+	1- Oui	
+FACEFUN	Utilisez-vous les réseaux sociaux pour vous divertir ?	2012     2015
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+FACELIEN	Utilisez-vous les réseaux sociaux pour entretenir des liens avec des proches ?	2012     2015
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+FACEMEET	Utilisez-vous les réseaux sociaux pour faire de nouvelles rencontres ?	2012     2015
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+FACENEWS	Utilisez-vous les réseaux sociaux pour vous informer de l'actualité ?	2012     2015
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+FACEPHO	Utilisez-vous les réseaux sociaux pour partager des photos & vidéos ?	2012     2015
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+FACEPROF	Utilisez-vous les réseaux sociaux pour votre activité professionnelle ?	2012     2015
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+FACE_INFO	Pensez-vous que les utilisateurs de réseaux sociaux devraient faire attention aux informations qu'ils y laissent ?	2009
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+FACE_VPRIVEE	Pensez-vous que les réseaux sociaux devraient mieux protéger la vie privée ?	2009
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+FACIL_INSTAL	Comment trouvez-vous la facilité d'installation des ordinateurs actuels ?	2009
+	1- Plutôt bonne	
+	2- Plutôt mauvaise	
+	3- Ne sait pas / Ne répond pas	
+FACIL_UTIL	Comment trouvez-vous la facilité d'utilisation des ordinateurs actuels ?	2009
+	1- Plutôt bonne	
+	2- Plutôt mauvaise	
+	3- Ne sait pas / Ne répond pas	
+FIAB_ORDI	Comment trouvez-vous la fiabilité d'utilisation des ordinateurs actuels ?	2009
+	1- Plutôt bonne	
+	2- Plutôt mauvaise	
+	3- Ne sait pas / Ne répond pas	
+FORMCONT	La formation continue vous a-t-elle bien préparé à utiliser les TIC dans un cadre professionnel ?	2013
+FOURNIS2	Etes-vous abonné chez le même opérateur pour les services de téléphone mobile et pour l’accès à internet ?	2012 2013 2014
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+FOURNISS	L’opérateur qui fournit votre accès à Internet vous fournit-il également des services de téléphonie mobile ?	2011
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+FRANCE_TEL	L'opérateur est-il France Telecom ?	2007 2008
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+FRAUD_AUT	Avez-vous été victime d'autres fraudes sur mobile ? (12 derniers mois)	2010
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+FRAUD_SMS	Avez-vous été victime de SMS frauduleux ? (12 derniers mois)	2010
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+FRAUD_VOCAL	Avez-vous été victime d'appels frauduleux ? (12 derniers mois)	2010
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+FREINWEB	Quel est le principal frein à l'utilisation d'internet?	2007 2008 2009 2010 2011 2012   2014
+	1- Internet est trop compliqué à utiliser	
+	2- La qualité du service (temps de réponse, interruptions, etc.) n'est pas satisfaisante	
+	3- Les données personnelles ne sont pas suffisamment protégées sur Internet	
+	4- Cela revient trop cher (équipement à acheter, abonnement, etc.)	
+	5- Internet n'est pas utile pour la vie quotidienne	
+	6- Le service après-vente et l'assistance ne sont pas satisfaisants	
+	7- Aucun de ces freins	
+	8- Ne sait pas / Ne répond pas	
+FREQACHA	Quelle est la fréquence de vos achants de biens sur internet ?	2016
+	1- Une à deux fois par semaine	
+	2- Tous les mois	
+	3- Plusieurs fois par an	
+	4- Une fois par an	
+	5- Jamais	
+	6- Ne sait pas / Ne répond pas	
+FREQAUT5	A quelle fréquence vous connectez-vous à internet par un autre moyen ?	2014
+	1- Tous les jours	
+	2- Une à deux fois par semaine	
+	3- Plus rarement	
+	4- Jamais	
+	5- Ne sait pas / Ne répond pas	
+FREQBURO	A quelle fréquence vous connectez-vous à internet sur votre lieu de travail (ou d'études) ? (12 derniers mois)	2007 2008 2009 2010 2011   2013
+	1- Tous les jours	
+	2- Une à deux fois par semaine	
+	3- Plus rarement	
+	4- Jamais	
+	5- Ne sait pas / Ne répond pas	
+FREQJOB	A quelle fréquence utilisez-vous un ordinateur au travail ?	2007           2013
+	1- Tous les jours	
+	2- Une à deux fois par semaine	
+	3- Plus rarement	
+	4- Jamais	
+	5- Ne sait pas / Ne répond pas	
+FREQMOBI	A quelle fréquence vous connectez-vous à internet par un ordinateur portable ?	2007 2008 2009 2010 2011 2012 2013 2014
+	1- Tous les jours	
+	2- Une à deux fois par semaine	
+	3- Plus rarement	
+	4- Jamais	
+	5- Ne sait pas / Ne répond pas	
+FREQORDIDOM	A quelle fréquence utilisez-vous vous-même l'ordinateur à domicile ?	2007 2008
+	1- Tous les jours	
+	2- Une à deux fois par semaine	
+	3- Plus rarement	
+	4- Jamais	
+	5- Ne sait pas / Ne répond pas	
+FREQPUBL	A quelle fréquence vous êtes-vous connecté à internet dans un lieu public en utilisant les équipements à disposition? (12 derniers mois)	2007 2008 2009 2010 2011
+	1- Tous les jours	
+	2- Une à deux fois par semaine	
+	3- Plus rarement	
+	4- Jamais	
+	5- Ne sait pas / Ne répond pas	
+FREQTOT	A quelle fréquence vous connectez-vous à internet ?	2015 2016
+	1- Tous les jours	
+	2- Une à deux fois par semaine	
+	3- Plus rarement	
+	4- Jamais	
+	5- Ne sait pas / Ne répond pas	
+FREQ_DOM	A quelle fréquence vous connectez-vous à internet à domicile ?	2007 2008 2009 2010 2011 2012 2013 2014
+	1- Tous les jours	
+	2- Une à deux fois par semaine	
+	3- Plus rarement	
+	4- Jamais	
+	5- Ne sait pas / Ne répond pas	
+GPS	Avez-vous utilisé un système d'aide à la la navigation du type GPS ?	2007
+	1- Oui	
+	2- Non	
+	3- Je ne connais pas ce système	
+	4- Ne sait pas / Ne répond pas	
+HAUT_DEBIT	Votre connexion à Internet à domicile est-elle à haut débit ?	2007 2008
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+HD_TECH	Type de connexion haut débit	2007 2008
+	1- Par une ligne ADSL	
+	2- Par le câble	
+	3- Par le satellite	
+	4- Par un autre moyen	
+	5- Ne sait pas / Ne répond pas	
+HR_MICRO	Nombre d'heures passées à utiliser l'ordinateur hors internet (par semaine)	2012
+HR_TELE	Nombre d'heures passées à regarder la télévisions sur un poste de télévision (par semaine)	2010   2012       2016
+HR_VIDEO	Nombre d'heures passéees à regarder des vidéos sur Internet (par semaine)	2012       2016
+HR_WEB	Nombre d'heures passées sur internet quelque soit le lieu (par semaine)	2010   2012 2013 2014   2016
+INTER	Identifiant CREDOC	2007 2008 2009 2010 2011 2012 2013 2014 2015 2016
+INTERNET	Avez-vous à votre domicile une connexion à internet (hors téléphone mobile) ?	2007 2008 2009 2010 2011 2012 2013 2014 2015 2016
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+LIEU_AIDE	Iriez-vous dans un lieu d'aide à l'utilisation d'un ordinateur ou d'internet ?	2010
+	1- Souvent	
+	2- De temps en temps	
+	3- Jamais	
+	4- Ne sait pas / Ne répond pas	
+LIVRACHA	Quel est le mode de livraison que vous pratiquez le plus ?	2016
+	1- A domicile	
+	2- En points relais	
+	3- En magasin	
+	4- En bureau de poste	
+	5- En consigne	
+	6- Sur le lieu de travail	
+	7- Ne sait pas / Ne répond pas	
+LIVREWEB	Pensez-vous utiliser à l'avenir une liseuse numérique?	2011       2015
+	1- Oui et je le fais déjà aujourd'hui	
+	2- Oui, je le ferai probablement à l'avenir	
+	3- Non je ne le ferai probablement pas à l'avenir	
+	4- Ne sait pas / Ne répond pas	
+LOCA_GEO	Souhaiteriez-vous avoir la possibilité d’interdire la transmission de votre localisation à des entreprises commerciales ?	2007 2008     2011 2012
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+LOCA_NO	Souhaiteriez-vous pouvoir vous opposer à la collecte de traces de localisations ?	2007
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+MICRO	Avez-vous un micro-ordinateur à votre domicile ?	2007 2008 2009 2010 2011 2012 2013 2014 2015 2016
+	1- Oui, un seul	
+	2- Oui, plusieurs	
+	3- Non	
+	4- Ne sait pas / Ne répond pas	
+MISSWEB	Combien de temps pouvez-vous vous passer d'internet sans que ça vous manque?	2011         2016
+	1- Quelques heures	
+	2- Une journée	
+	3- Deux ou trois jours	
+	4- Une semaine ou deux	
+	5- Trois ou quatre semaines	
+	6- Plus longtemps	
+	7- Ne sait pas / Ne répond pas	
+MISSWEB1	[2016] Quels sont les deux services d'internet dont vous auriez le plus de mal à vous passer ? [choix 1]	2016
+Ajout de la modalité échanges instantanés par rapport à 2011	1- Les e-mails	
+	2- Les démarches administratives	
+	3- Les jeux en réseau	
+	4- Les films, les vidéos sur internet	
+	5- Les réseaux sociaux	
+	6- Les sites d'information, d'actualités	
+	7- Les achats	
+	8- Les échanges instananés (WhatsApp, Snapchat, Messenger, etc.)	
+	9- Ne sait pas / Ne répond pas	
+MISSWEB2	[2016] Quels sont les deux services d'internet dont vous auriez le plus de mal à vous passer ? [choix 2]	2016
+Ajout de la modalité échanges instantanés par rapport à 2011	1- Les e-mails	
+	2- Les démarches administratives	
+	3- Les jeux en réseau	
+	4- Les films, les vidéos sur internet	
+	5- Les réseaux sociaux	
+	6- Les sites d'information, d'actualités	
+	7- Les achats	
+	8- Les échanges instananés (WhatsApp, Snapchat, Messenger, etc.)	
+	9- Ne sait pas / Ne répond pas	
+MISWEB_1	[2011] Quels sont les deux services d'internet dont vous auriez le plus de mal à vous passer ? [choix 1]	2011
+	1- Les e-mails	
+	2- Les démarches administratives	
+	3- Les jeux en réseau	
+	4- Les films, les vidéos sur internet	
+	5- Les réseaux sociaux	
+	6- Les sites d'information, d'actualités	
+	7- Les achats	
+	8- Ne sait pas / Ne répond pas	
+MISWEB_2	[2011] Quels sont les deux services d'internet dont vous auriez le plus de mal à vous passer ? [choix 2]	2011
+	1- Les e-mails	
+	2- Les démarches administratives	
+	3- Les jeux en réseau	
+	4- Les films, les vidéos sur internet	
+	5- Les réseaux sociaux	
+	6- Les sites d'information, d'actualités	
+	7- Les achats	
+	8- Ne sait pas / Ne répond pas	
+MOBAPPLI	Utilisez-vous votre téléphone mobile pour télécharger des applications gratuites ou payantes ?	2010 2011 2012 2013 2014 2015 2016
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+MOBCLIP	Utilisez-vous votre mobile pour regarder des clips, des vidéos ?	2007
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+MOBEMAIL	Utilisez-vous votre mobile pour consulter vos e-mails ?	2007 2008 2009 2010 2011 2012 2013 2014 2015
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+MOBHANGS1	Utilisez-vous votre mobile pour échanger des messages texte par applications de messagerie instantanée ?	2014 2015 2016
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+MOBHANGS2	Utilisez-vous votre mobile pour téléphoner par applications de messagerie instantanée ?	2014 2015 2016
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+MOBIMOBI	Vous connectez-vous à internet à votre domicile avec un téléphone mobile ou une tablette sur le réseau mobile ?	2011 2012 2013 2014
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+MOBINTER	Utilisez-vous votre mobile pour naviguer sur internet ?	2007 2008 2009 2010 2011 2012 2013 2014 2015 2016
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+MOBIWIFI	Vous connectez-vous à internet à votre domicile avec un téléphone mobile ou une tablette sur le réseau Wi-Fi ?	2011 2012 2013 2014   2016
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+MOBJEUX	Utilisez-vous votre mobile pour telecharger jeux, logos ?	2007 2008 2009
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+MOBMAPS	Utilisez-vous votre téléphone mobile pour géolocaliser un restaurant, bar, musée, etc. ?	2014 2015 2016
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+MOBMUSIC	Utilisez-vous votre mobile pour écouter de la musique ?	2007
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+MOBSMS	Utilisez-vous votre mobile pour envoyer des SMS ?	2007 2008 2009 2010
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+MOBTELEV	Utilisez-vous votre mobile pour regarder la television ?	2007 2008 2009 2010 2011 2012 2013
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+MOBVIDEO	Utilisez-vous votre mobile pour regarder des vidéos ?	2016
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+NBANWEB	Depuis combien d'années disposez-vous d'une connexion internet ?	2010           2016
+NBPERS5	Nombre de personnes vivant dans le logement (5 modalités)	2007 2008 2009 2010 2011 2012 2013 2014 2015 2016
+	1- Une personne	
+	2- Deux personnes	
+	3- Trois personnes	
+	4- Quatre personnes	
+	5- Cinq personnes et plus	
+NBTELE	Nombre de postes de télévision actifs du logement	2012 2013 2014
+	1- Aucun	
+	2- Un	
+	3- Deux	
+	4- Trois	
+	5- Quatre	
+	6- Cinq et plus	
+	7- Ne sait pas / Ne répond pas	
+NB_SMS	Nombre de SMS envoyés par semaine	2007 2008 2009 2010 2011 2012 2013 2014
+NETFLIX	Avez-vous un abonnement qui vous permet de regarder des vidéo en illimité ?	2016
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+NONACHAT	Pourquoi hésiter à effectuer des achats sur internet (une réponse possible) ?	2009             2016
+	1- On ne peut pas bien voir ou toucher les produits	
+	2- La sécurité des paiements n'est pas assurée	
+	3- On ne connaît pas l'entreprise qui se cache derrière	
+	4- Il n'y a pas de vendeur pour nous renseigner	
+	5- Les délais de livraison sont trop longs	
+	6- Les produits sont plus chers	
+	7- Rien de tout cela ne vous fait hésiter	
+	8- Ne sait pas / Ne répond pas	
+OBJCOM	Les entreprises qui fournissent domotique utilisent-elles les info à des fin commerciales?	2015
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+OBJSECU	Les entreprises qui fournissent domotique protègent-elles la vie privée?	2015
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+OBJWEB1	Utilisez-vous des appareils connectés pour la santé ?	2015
+	1- Oui, j'y vois un très grand intérêt	
+	2- Oui, j'y vois un certain intérêt	
+	3- Non, je n'y vois pas trop d'intérêt	
+	4- Non, je n'y vois aucun intérêt	
+	5- Ne sait pas / Ne répond pas	
+OBJWEB2	Utilisez-vous des appareils connectés pour le sommeil ?	2015
+	1- Oui, j'y vois un très grand intérêt	
+	2- Oui, j'y vois un certain intérêt	
+	3- Non, je n'y vois pas trop d'intérêt	
+	4- Non, je n'y vois aucun intérêt	
+	5- Ne sait pas / Ne répond pas	
+OBJWEB3	Utilisez-vous des appareils connectés pour le poids ?	2015
+	1- Oui, j'y vois un très grand intérêt	
+	2- Oui, j'y vois un certain intérêt	
+	3- Non, je n'y vois pas trop d'intérêt	
+	4- Non, je n'y vois aucun intérêt	
+	5- Ne sait pas / Ne répond pas	
+OPFIXE	Etes-vous abonné, pour la ligne fixe, aux services d’un seul opérateur ou de plusieurs opérateurs ?	2007 2008 2009 2010
+	1- Un seul opérateur qui est France Télécom (Orange)	
+	2- Un seul opérateur qui n'est pas France Télécom (Orange)	
+	3- Plusieurs opérateurs	
+	4- Ne sait pas / Ne répond pas	
+ORDIALL	Vous connectez-vous à internet à domicile avec un ordinateur par une connexion fixe (branché ou en Wi-Fi)	2016
+ex ORDIFIXE+ORDIWIFI	1- Oui	2016
+	2- Non	
+ORDICLE3	Vous connectez-vous à internet à domicile avec un ordinateur connecté par le réseau mobile via une clé 3G/4G ?	2011 2012 2013 2014
+	1- Oui	
+	2- Non	
+ORDIFIXE	Vous connectez-vous à internet à domicile avec un ordinateur par une connexion fixe (branché)	2011 2012 2013 2014
+	1- Oui	
+	2- Non	
+ORDIJOB	Avez-vous accès à un ordinateur sur votre lieu de travail ou d'études ?	2007 2008         2013
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+ORDIWIFI	Vous connectez-vous à internet à domicile avec un ordinateur sur réseau Wi-Fi	2011 2012 2013 2014
+	1- Oui	
+	2- Non	
+ORDI_VAC	Emmenez-vous votre ordinateur portable ou votre tablette quand vous partez en vacances ?	2011
+	1- Oui, toujours	
+	2- Oui, occasionnellement	
+	3- Non	
+	4- Ne sait pas / Ne répond pas	
+OUTILFOR	Internet est-il un bon outil pour suivre des formations ?	2016
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+OUTILJOB	Internet est-il un bon outil pour trouver des offres d'emploi ?	2016
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+PARENTAL	Avez-vous utilisé un logiciel de contrôle parental ? (12 derniers mois)	2007
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+PCS8EGO	PCS (8 modalités)	2007 2008 2009 2010 2011 2012 2013 2014 2015 2016
+	1- Independant	
+	2- Cadre supérieur	
+	3- Profession intermédiaire	
+	4- Employé	
+	5- Ouvrier	
+	6- Reste au foyer	
+	7- Retraite	
+	8- Éleve/étudiant	
+POND	Coefficient de pondération	2007 2008 2009 2010 2011 2012 2013 2014 2015 2016
+PORTABLE	Avez-vous, au domicile, un ordinateur portable ?	2007 2008 2009 2010 2011 2012 2013
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+PP_VPRIVEE	Les pouvoirs publics doivent-ils inciter davantage les sites Internet à mieux protéger la vie privée ?	2010
+	1- Plutôt d'accord	
+	2- Plutôt pas d'accord	
+	3- Ne sait pas / Ne répond pas	
+PROSP_TELMOB	Pensez-vous vous abonner à un service de télévision sur mobile dans les 12 prochains mois ?	2007
+	1- Oui	
+	2- Non	
+	3- Je ne connais pas ce service	
+	4- Ne sait pas / Ne répond pas	
+PROTEGO	Faites-vous attention à protéger vos données personnelles numériques ?	2014
+	1- Oui et je suis très vigilant	
+	2-Oui j'y pense de temps en temps	
+	3- Non	
+	4- Ne sait pas / Ne répond pas	
+PX_ELEC	Seriez-vous prêt à payer 5% plus cher pour un ordinateur qui consomme moins d'électricité ?	2009
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+PX_RECYCL	Seriez-vous prêt à payer 5% plus cher pour un ordinateur qui puisse être recyclé facilement ?	2009
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+QUALIMOB	Comment qualifieriez-vous votre connexion à internet depuis votre mobile ?	2016
+	1- Très satisfaisante	
+	2- Plutôt satisfaisante	
+	3- Peu satisfaisante	
+	4- Pas du tout satisfaisante	
+	5- Ne sait pas / Ne répond pas	
+RAPIDITE	Diriez-vous que votre connexion mobile à internet est plus rapide que votre connexion fixe (à domicile ?)	2016
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+RAPID_DATAMOB	Avez-vous parfois l’impression que la connexion à Internet sur votre téléphone mobile n’est pas assez rapide ?	2010
+	1- Oui, très souvent	
+	2- Oui, assez souvent	
+	3- Non, assez peu souvent	
+	4- Non, jamais	
+	5- Ne sait pas / Ne répond pas	
+RAPID_FIX	Avez-vous parfois l’impression que votre connexion à Internet n’est pas assez rapide ?	2008   2010
+	1- Oui, très souvent	
+	2- Oui, souvent	
+	3- Non, pas très souvent	
+	4- Non, jamais	
+	5- Ne sait pas / Ne répond pas	
+RAPID_TELETRAV	Votre connexion à internet à domicile suffit-elle pour travailler à distance ?	2008
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+RECH_ECO	Grâce à internet, économisez-vous en comparant des offres ?	2008
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+REDACWEB	Sur les forums de discussion, les réseaux sociaux, les chats, les blogs, êtes-vous plutôt…	2014
+	1- Un lecteur de ce que les autres disent ou écrivent	
+	2- Un contributeur	
+	3- Autant l'un que l'auter	
+	4- Ne sait pas / Ne répond pas	
+REDUC	Cette situation vous permet-elle de bénéficier d’un tarif réduit ou d’une remise ?	2011
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+REDUC2	S’agit-il d’une offre permettant d’obtenir une remise sur vos abonnements en les regroupant ?	2012 2013 2014
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+RED_DEPMOB	Avez-vous réduit vos dépenses pour les services mobiles ces derniers mois ?	2009
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+REGLJEU	Avez-vous mis en place des règles concernant vos enfants qui limitent le temps qu’ils passent à jouer à des jeux vidéo ?	2012   2014
+	1- Oui	
+	2- Non	
+REGLPHON	Avez-vous mis en place des règles concernant vos enfants qui limitent le temps qu’ils passent à téléphoner ou envoyer des SMS ?	2012   2014
+	1- Oui	
+	2- Non	
+REGLTELE	Avez-vous mis en place des règles concernant vos enfants qui limitent le temps qu’ils passent à regarder la télévision ?	2012   2014
+	1- Oui	
+	2- Non	
+REGLWEB	Avez-vous mis en place des règles concernant vos enfants qui limitent le temps qu’ils passent à utiliser internet ?	2012   2014
+	1- Oui	
+	2- Non	
+REPLMOB	Avez-vous regardé la télévision en replay sur votre téléphone ? (12 derniers mois)	2014
+	1- Oui	
+	2- Non	
+REPLORDI	Avez-vous regardé la télévision en replay sur votre ordinateur ? (12 derniers mois)	2014
+	1- Oui	
+	2- Non	
+REPLTABL	Avez-vous regardé la télévision en replay sur votre tablette tactile ? (12 derniers mois)	2014
+	1- Oui	
+	2- Non	
+REPLTELE	Avez-vous regardé la télévision en replay sur votre télévision ? (12 derniers mois)	2014
+	1- Oui	
+	2- Non	
+RESEAU4G	Utilisez-vous le réseau 4G pour vous connecter à internet via votre mobile ?	2014   2016
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+REVTOT6	Revenu mensuel du foyer en classes (6 modalités)	2007 2008 2009           2015 2016
+	1- moins de 900€	
+	2- de 900€ à 1499€	
+	3- de 1500€ à 2299€	
+	4- de 2300€ à 3099€	
+	5- 3100€ et plus	
+	6- Ne sait pas / Ne répond pas	
+REVTOT7	Revenu mensuel du foyer en classes (7 modalités)	2010 2011 2012 2013 2014
+	1- moins de 900€	
+	2- de 900€ à 1499€	
+	3- de 1500€ à 2299€	
+	4- de 2300€ à 3099€	
+	5- de 3100€ à 3999€	
+	6- 4100€ et plus	
+	7- Ne sait pas / Ne répond pas	
+SEXE	Sexe	2007 2008 2009 2010 2011 2012 2013 2014 2015 2016
+	1- Homme	
+	2- Femme	
+SITES_ERASE	Les sites Internet devraient-ils permettre à chacun d’effacer simplement les informations personnelles ?	2010
+	1- Plutôt d'accord	
+	2- Plutôt pas d'accord	
+	3- Ne sait pas / Ne répond pas	
+SMARTPHO	Disposez-vous d'un smartphone ?	2011 2012 2013 2014 2015 2016
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+SUFFADMI	La qualité de votre connexion (fixe ou mobile) à domicile est-elle suffisante pour effectuer des démarches administratives ?	2016
+	1- Oui	
+	2- Non	
+SUFFFILM	La qualité de votre connexion (fixe ou mobile) à domicile est-elle suffisante pour regarder ou télécharger des films/vidéos ?	2016
+	1- Oui	
+	2- Non	
+SURANTEN	Pour la santé humaine, les antennes-relais semblent ?	2014
+	1- Plutôt sûrs	
+	2- Plutôt pas sûrs	
+	3- Ne sait pas / Ne répond pas	
+SURCHAMP	Pour la santé humaine, les chps magnétiques générés par les appareils éléctriques domestiques semblent ?	2014
+	1- Plutôt sûrs	
+	2- Plutôt pas sûrs	
+	3- Ne sait pas / Ne répond pas	
+SURTELMO	Pour la santé humaine, les téléphones mobiles semblent ?	2014
+	1- Plutôt sûrs	
+	2- Plutôt pas sûrs	
+	3- Ne sait pas / Ne répond pas	
+SURWIFI	Pour la santé humaine, les réseaux wi-fi à l'intérieur des maisons semblent ?	2014
+	1- Plutôt sûrs	
+	2- Plutôt pas sûrs	
+	3- Ne sait pas / Ne répond pas	
+TABLETTE	Disposez-vous d'une tablette tactile ?	2011 2012 2013 2014 2015 2016
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+TARIFSOC	Les personnes à très faibles revenus devraient-elles bénéficier d’un tarif moins cher pour avoir internet à domicile ?	2011
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+TEL1ADSL	Accédez-vous à la télévision par ADSL ? (poste principal)	2012 2013 2014
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+TEL1CABL	Accédez-vous à la télévision par câble ? (poste principal)	2012 2013 2014
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+TEL1CLAS	Accédez-vous à la télévision par antenne classique ? (poste principal)	2012 2013 2014
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+TEL1OPTI	Accédez-vous à la télévision par fibre optique ? (poste principal)	2012 2013 2014
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+TEL1PRIN	Quel est le mode d'accès principal à la télévision? (poste principal)	2012
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+TEL1SATE	Accédez-vous à la télévision par antenne satellite ? (poste principal)	2012 2013 2014
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+TEL2ADSL	Accédez-vous à la télévision par ADSL ? (deuxième poste)	2012 2013 2014
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+TEL2CABL	Accédez-vous à la télévision par câble ? (deuxième poste)	2012 2013 2014
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+TEL2CLAS	Accédez-vous à la télévision par antenne classique ? (deuxième poste)	2012 2013 2014
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+TEL2OPTI	Accédez-vous à la télévision par fibre optique ? (deuxième poste)	2012 2013 2014
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+TEL2PRIN	Quel est le mode d'accès principal à la télévision? (deuxième poste)	2012
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+TEL2SATE	Accédez-vous à la télévision par antenne satellite ? (deuxième poste)	2012 2013 2014
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+TEL3ADSL	Accédez-vous à la télévision par ADSL ? (autre poste)	2012 2013 2014
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+TEL3CABL	Accédez-vous à la télévision par câble ? (autre poste)	2012 2013 2014
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+TEL3CLAS	Accédez-vous à la télévision par antenne classique ? (autre poste)	2012 2013 2014
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+TEL3OPTI	Accédez-vous à la télévision par fibre optique ? (autre poste)	2012 2013 2014
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+TEL3SATE	Accédez-vous à la télévision par antenne satellite ? (autre poste)	2012 2013 2014
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+TELECHLOGIC	Avez-vous téléchargé des logiciels sur Internet ? (12 derniers mois)	2007 2008 2009
+	1- Oui	
+	2- Non	
+TELE_ADSL	Accédez-vous, chez vous, à la télévision par l'ADSL ?	2007 2008 2009 2010 2011
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+TELE_ANTEN	Accédez-vous, chez vous, à la télévision par antenne classique ?	2007 2008 2009 2010 2011
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+TELE_CABLE	Accédez-vous, chez vous, à la télévision par le câble ?	2007 2008 2009 2010 2011
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+TELE_SAT	Accédez-vous, chez vous, à la télévision par satellite ?	2007 2008 2009 2010 2011
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+TELE_TNT	Accédez-vous, chez vous, à la télévision par décodeur TNT ?	2007 2008 2009 2010 2011
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+TELFIXE	Disposez-vous à domicile d'une ligne de téléphonie fixe ?	2007 2008 2009 2010 2011 2012 2013 2014 2015 2016
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+TELMOB	Avez-vous un téléphone mobile ?	2007 2008 2009 2010 2011 2012 2013 2014 2015 2016
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+TELVISIO	Téléphonez-vous par visioconférence ?	2011
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+TEL_BOX	Téléphonez-vous de votre domicile grâce à votre accès internet en utilisant un téléphone branché sur la Box ?	2007 2008 2009 2010 2011 2012 2013 2014   2016
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+TELE_FIBR	Accédez-vous à la télévision par la fibre optique ?	2011
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+THREATART	Pour la création artistique, Internet est une chance ou un menace ?	2008
+	1- Une chance	
+	2- Une menace	
+	3- Ne sait pas / Ne répond pas	
+THREATDEV	Pour l'environnement et le développement durable, Internet est une chance ou une menace ?	2008
+	1- Une chance	
+	2- Une menace	
+	3- Ne sait pas / Ne répond pas	
+THREATJOB	Pour l'emploi, les ordinateurs et Internet représente-t-il une chance ou une menace ?	2008
+	1- Une chance	
+	2- Une menace	
+	3- Ne sait pas / Ne répond pas	
+TICLOVE	Internet vous a-t-il permis de faire rencontre amoureuse ?	2014
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+TICNEW	Internet vous a-t-il permis de nouer des liens avec de nouvelles personnes ?	2014
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+TICOFJOB	Vous arrive-t-il d'utiliser les TIC pour des raisons professionnelles en dehors du travail ?	2013
+	1- Oui, régulièrement	
+	2- Oui, de temps en temps	
+	3- Non, jamais	
+	4- Ne sait pas / Ne répond pas	
+TICOLD	Internet vous a-t-il permis de retrouver d'anciennes connaissances ?	2014
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+TICONCIL	Que pensez-vous de l'usage des TIC pour des besoin profesionnels en dehors du travail ?	2013
+	1- Permet de mieux concilier vie privée et professionnelle	
+	2- Empiète sur vie privée	
+	3- Ne sait pas / Ne répond pas	
+TM_BOOK	Occupez-vous les temps morts (transports) en lisant des livres ?	2013
+	1- Souvent	
+	2- De temps en temps	
+	3- Jamais	
+	4- Ne sait pas / Ne répond pas	
+TM_GAME	Occupez-vous les temps morts (transports) en jouant à des jeux video ?	2013
+	1- Souvent	
+	2- De temps en temps	
+	3- Jamais	
+	4- Ne sait pas / Ne répond pas	
+TM_LOOK	Occupez-vous les temps morts (transports) en observant les alentours ?	2013
+	1- Souvent	
+	2- De temps en temps	
+	3- Jamais	
+	4- Ne sait pas / Ne répond pas	
+TM_MUSIC	Occupez-vous les temps morts (transports) en écoutant de la musique ?	2013
+	1- Souvent	
+	2- De temps en temps	
+	3- Jamais	
+	4- Ne sait pas / Ne répond pas	
+TM_SMS	Occupez-vous les temps morts (transports) en envoyant des SMS ?	2013
+	1- Souvent	
+	2- De temps en temps	
+	3- Jamais	
+	4- Ne sait pas / Ne répond pas	
+TM_TALK	Occupez-vous les temps morts (transports) en discutant ?	2013
+	1- Souvent	
+	2- De temps en temps	
+	3- Jamais	
+	4- Ne sait pas / Ne répond pas	
+TM_TEL	Occupez-vous les temps morts (transports) en téléphonant ?	2013
+	1- Souvent	
+	2- De temps en temps	
+	3- Jamais	
+	4- Ne sait pas / Ne répond pas	
+TM_VIDEO	Occupez-vous les temps morts (transports) en regardant des vidéos ?	2013
+	1- Souvent	
+	2- De temps en temps	
+	3- Jamais	
+	4- Ne sait pas / Ne répond pas	
+TM_WEB	Occupez-vous les temps morts (transports) en naviguant sur internet ?	2013
+	1- Souvent	
+	2- De temps en temps	
+	3- Jamais	
+	4- Ne sait pas / Ne répond pas	
+TPSBOOK	Jugement sur temps consacré aux livres ?	2012       2016
+	1-  Trop de temps	
+	2- Pas assez de temps	
+	3- Le temps qu'il faut	
+	4- Ne sait pas / Ne répond pas	
+TPSFACEB	Jugement sur temps consacré aux réseaux sociaux ?	2016
+	1-  Trop de temps	
+	2- Pas assez de temps	
+	3- Le temps qu'il faut	
+	4- Ne sait pas / Ne répond pas	
+TPSPRESS	Jugement sur temps consacré à presse écrite ?	2012       2016
+	1-  Trop de temps	
+	2- Pas assez de temps	
+	3- Le temps qu'il faut	
+	4- Ne sait pas / Ne répond pas	
+TPSRADIO	Jugement sur temps consacré à radio ?	2012       2016
+	1-  Trop de temps	
+	2- Pas assez de temps	
+	3- Le temps qu'il faut	
+	4- Ne sait pas / Ne répond pas	
+TPSTELE	Jugement sur temps consacré à télévision ?	2012       2016
+	1-  Trop de temps	
+	2- Pas assez de temps	
+	3- Le temps qu'il faut	
+	4- Ne sait pas / Ne répond pas	
+TPSWEB	Jugement sur temps consacré à internet ?	2012       2016
+	1-  Trop de temps	
+	2- Pas assez de temps	
+	3- Le temps qu'il faut	
+	4- Ne sait pas / Ne répond pas	
+TRANSINF	Pensez-vous que certains logiciels sur téléphone mobile peuvent transmettre des informations ?	2012   2014
+	1- Oui, c'est sûr	
+	2- Oui, c'est probable	
+	3- Non, c'est peu probable	
+	4- Non, ce n'est pas possible	
+	5- Ne sait pas / Ne répond pas	
+TVMOB	Avez-vous regardé la télévision en direct sur votre téléphone ? (12 derniers mois)	2014
+	1- Oui	
+	2- Non	
+TVORDI	Avez-vous regardé la télévision en direct sur votre ordinateur ? (12 derniers mois)	2014
+	1- Oui	
+	2- Non	
+TVTABL	Avez-vous regardé la télévision en direct sur votre tablette tactile ? (12 derniers mois)	2014
+	1- Oui	
+	2- Non	
+TVTELE	Avez-vous regardé la télévision en direct sur votre télévision ? (12 derniers mois)	2014
+	1- Oui	
+	2- Non	
+TV_ACHAT	Vous arrive-t-il de faire des achats en regardant la télévision ?	2013
+	1- Souvent	
+	2- De temps en temps	
+	3- Jamais	
+	4- Ne sait pas / Ne répond pas	
+TV_AUTRE	Vous arrive-t-il de faire autre chose en regardant la télévision ?	2013
+	1- Souvent	
+	2- De temps en temps	
+	3- Jamais	
+	4- Ne sait pas / Ne répond pas	
+TV_FACEB	Vous arrive-t-il de participer à des réseaux sociaux en regardant la télévision ?	2013
+	1- Souvent	
+	2- De temps en temps	
+	3- Jamais	
+	4- Ne sait pas / Ne répond pas	
+TV_GAME	Vous arrive-t-il de jouer à des jeux vidéo en regardant la télévision ?	2013
+	1- Souvent	
+	2- De temps en temps	
+	3- Jamais	
+	4- Ne sait pas / Ne répond pas	
+TV_PROG	Vous arrive-t-il de regarde les programmes tv en regardant la télévision ?	2013
+	1- Souvent	
+	2- De temps en temps	
+	3- Jamais	
+	4- Ne sait pas / Ne répond pas	
+TV_SMS	Vous arrive-t-il d'envoyer des SMS en regardant la télévision ?	2013
+	1- Souvent	
+	2- De temps en temps	
+	3- Jamais	
+	4- Ne sait pas / Ne répond pas	
+TV_TEL	Vous arrive-t-il de téléphoner en regardant la télévision ?	2013
+	1- Souvent	
+	2- De temps en temps	
+	3- Jamais	
+	4- Ne sait pas / Ne répond pas	
+TV_WEB	Vous arrive-t-il de naviguer sur internet en regardant la télévision ?	2013
+	1- Souvent	
+	2- De temps en temps	
+	3- Jamais	
+	4- Ne sait pas / Ne répond pas	
+TXAPPLI	Utilisation plus fréquente des applications ou des navigateurs ?	2016
+	1- Plutôt à partir d'applications téléchargées	
+	2- Plutôt à partir d'un moteur de recherche et de navigation sur internet	
+	3- Autant l'un que l'autre	
+	4- Ne sait pas / Ne répond pas	
+TYPCONEX	Votre connexion à Internet est-elle ? (type de connexion)	2009 2010 2011 2012 2013 2014 2015
+	1- Par une ligne bas débit	
+	2- Par une ligne ADSL	
+	3- Par le câble	
+	4- Par la fibre optique	
+	5- Par le satellite	
+	6- Par un autre moyen	
+	7- Ne sait pas / Ne répond pas	
+TYPLOG	Type d'habitation (4 modalités)	2016
+	1- Pavillon, habitat individuel	
+	2- HLM, ILN	
+	3- Immeuble (autre que HLM, ILN)	
+	4- Autre	
+TYPLOG2	Type d'habitation (2 modalités)	2016
+	1- Maison individuelle	
+	2- Logement collectif	
+TYPOSQT	Typologie des niveaux de vie	2014 2015 2016
+	1- Bas revenus	
+	2- Classe moyenne inférieure	
+	3- Classe moyenne supérieure	
+	4- Hauts revenus	
+	5- Ne sait pas / Ne répond pas	
+USEJOB	Utilisez-vous internet sur le lieu de travail ou d'études…	2013
+	1- Uniquement à des fins professionnelles ?	
+	2- Uniquement à des fins personnelles ?	
+	3- A la fois à des fins personnelles et professionnelles ?	
+	4- Ne sait pas / Ne répond pas	
+US_ACHAT	Avez-vous effectué des achats sur internet ? (12 derniers mois)	2007 2008 2009 2010 2011 2012 2013 2014 2015 2016
+	1- Oui	
+	2- Non	
+US_ADMI	Avez-vous effectué des démarches administratives par Internet ? (12 mois)	2009 2010 2011 2012 2013 2014 2015 2016
+	1- Oui	
+	2- Non	
+US_COL1	Usage internet : Noter/évaluer/commenter un produit acheté	2015
+	1- Oui	
+	2- Non	
+US_COL2	Usage internet : consulter notes/évaluations/commentaires avant achat	2015
+	1- Oui	
+	2- Non	
+US_COL3	Usage internet : proposer des biens ou services à des particuliers contre rémunération	2015
+	1- Oui	
+	2- Non	
+US_COL4	Usage internet : recourir à un particulier pour bien ou services contre rémunération	2015
+	1- Oui	
+	2- Non	
+US_COL5	Usage internet : échange entre particuliers sans rémunération	2015
+	1- Oui	
+	2- Non	
+US_DOCAD	Avez-vous demandé des documents administratifs sur internet ? (12 derniers mois)	2010 2011 2012
+	1- Oui	
+	2- Non	
+US_FACEB	Avez-vous participé à des réseaux sociaux sur Internet ? (12 derniers mois)	2009 2010 2011 2012 2013 2014 2015 2016
+	1- Oui	
+	2- Non	
+US_FORME	Avez-vous utilisé Internet pour vous former ? (12 derniers mois)	2007 2008 2009 2010 2011         2016
+	1- Oui	
+	2- Non	
+US_IMPOT	Avez-vous déclaré vos revenus sur Internet ? (12 derniers mois)	2010 2011 2012
+	1- Oui	
+	2- Non	
+US_INFAD	Avez-vous cherché des informations administratives sur Internet ? (12 derniers mois)	2010 2011 2012
+	1- Oui	
+	2- Non	
+US_JEUX	Avez-vous joué à des jeux en réseau sur Internet ? (12 derniers mois)	2007     2010   2012
+	1- Oui	
+	2- Non	
+US_JOB	Avez-vous recherché des offres d'emploi sur Internet ? (12 derniers mois)	2007 2008 2009 2010 2011 2012 2013 2014 2015 2016
+	1- Oui	
+	2- Non	
+US_MUSIC	Avez-vous écouté ou téléchargé de la musique ? (12 derniers mois)	2013 2014 2015 2016
+	1- Oui	
+	2- Non	
+US_NEWS	Avez-vous suivi l'actualité sur Internet ? (12 derniers mois)	2012       2016
+	1- Oui	
+	2- Non	
+US_PREPA	Vous êtes-vous informé en amont d'un achat ? (12 derniers mois)	2015
+	1- Oui	
+	2- Non	
+US_RADIO	Avez-vous écouté la radio sur Internet ? (12 derniers mois)	2007
+	1- Oui	
+	2- Non	
+US_SANTE	Avez-vous recherché des informations pour votre santé sur Internet ? (12 derniers mois)	2007       2011       2015
+	1- Oui	
+	2- Non	
+US_STRFI	Avez-vous regardé des films en streaming sur Internet ? (12 derniers mois)	2010 2011 2012
+	1- Oui	
+	2- Non	
+US_STRMU	Avec-vous écouté de la musique en streaming ? (12 derniers mois)	2010 2011 2012
+	1- Oui	
+	2- Non	
+US_TELE	Avez-vous regardé la télévision par Internet sur votre ordinateur ? (12 derniers mois)	2007 2008 2009 2010 2011 2012 2013   2015
+	1- Oui	
+	2- Non	
+US_TELFI	Avez-vous téléchargé des films sur Internet ? (12 derniers mois)	2007 2008 2009 2010 2011 2012
+	1- Oui	
+	2- Non	
+US_TELMU	Avez-vous téléchargé de la musique sur Internet ? (12 derniers mois)	2007 2008 2009 2010 2011 2012
+	1- Oui	
+	2- Non	
+US_VENTE	Avez-vous vendu un bien ou service sur Internet ? (12 derniers mois)	2011       2015
+	1- Oui	
+	2- Non	
+US_VIDEO	Avez-vous regardé ou téléchargé des films ou vidéos sur Internet ? (12 derniers mois)	2013   2015
+	1- Oui	
+	2- Non	
+US_WKHOM	Avez-vous travaillé à domicile sur Internet ? (12 derniers mois)	2007 2008   2010 2011   2013
+	1- Oui	
+	2- Non	
+VIDEOMOB	Avez-vous regardé des videos (streaming, téléchargement) sur mobile ? (12 derniers mois)	2014
+	1- Oui	
+	2- Non	
+VIDEORDI	Avez-vous regardé des videos (streaming, téléchargement) sur ordinateur ? (12 derniers mois)	2014
+	1- Oui	
+	2- Non	
+VIDETABL	Avez-vous regardé des videos (streaming, téléchargement) sur tablette ? (12 derniers mois)	2014
+	1- Oui	
+	2- Non	
+VIDETELE	Avez-vous regardé des videos (streaming, téléchargement) sur poste de télévision ? (12 derniers mois)	2014
+	1- Oui	
+	2- Non	
+VIGIOND1	Etes-vous vigilant à : limiter la durée de vos appels ?	2014
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+VIGIOND2	Etes-vous vigilant à : éviter de téléphoner dans zones mal couvertes ?	2014
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+VIGIOND3	Etes-vous vigilant à : éloigner téléphone mobile ?	2014
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+VIGIOND4	Etes-vous vigilant à : éviter de téléphoner lors des déplacements ?	2014
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+WEBATTAQ	Avez-vous déjà été victime d'un accès indésirable à vos données ?	2014
+	1- Oui, c'est sûr	
+	2- Oui, c'est probable	
+	3- Non, c'est peu probable	
+	4- Non, ce n'est pas possible	
+	5- Ne sait pas / Ne répond pas	
+WEBAUTRE	Vous êtes-vous connecté à internet hors domicile et hors téléphone mobile ? (12 derniers mois)	2012 2013
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+WEBGENE	Vous est-il déjà arrivé d’être gêné que certains éléments de votre vie privée figurent sur internet ?	2014
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+WEBINTEG	Selon vous, avoir accès à internet est-il important pour se sentir intégré dans notre société ?	2009             2016
+	1- Oui, c'est très important	
+	2- Oui, c'est assez important	
+	3- Non, ce n'est pas très important	
+	4- Non, ce n'est pas du tout important	
+	5- Ne sait pas / Ne répond pas	
+WEBREGRE	Vous est-il déjà arrivé de regretter d’avoir publié ou écrit des choses concernant votre vie privée sur internet ?	2014
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+WEB_BURO	Avez-vous une connexion ou un accès à internet sur votre lieu de travail (ou d'études) ?	2007 2008 2009 2010 2011   2013
+	1- Oui	
+	2- Non	
+	3- Ne sait pas / Ne répond pas	
+WHYFIXE	Est-ce important de disposer d'une ligne de téléphonie fixe à domicile ?	2016
+	1- Très important	
+	2- Assez important	
+	3- Peu important	
+	4- Pas du tout important	
+	5- Ne sait pas / Ne répond pas	
+WHYHG	Pour quelle raison principale utilisez-vous la messagerie instantanée ?	2016
+	1- Pour envoyer des photos, des vidéos, du multimédia	
+	2- Pour communiquer à l'international	
+	3- Pour pouvoir discuter avec un groupe d'utilisateurs	
+	4- Pour protéger vos données personnelles	
+	5- Pour la simplicité d'usage	
+	6- Autre raison	
+	7- Ne sait pas / Ne répond pas	
+WHYNOTFI	Pour quelle raison principale n’êtes-vous pas abonné à une offre à très haut débit (par fibre optique) à votre domicile ?	2012     2015
+	1- Les abonnements sont trop chers	
+	2- Cela demande des travaux d'aménagement de votre domicile que vous n'êtes pas prêt à réaliser	
+	3- La fibre optique n'est pas disponible là où vous habitez	
+	4- Cela ne vous intéresse pas car votre débit actuel vous convient	
+	5- Autres raisons	
+	6- Ne sait pas / Ne répond pas	
+WHYNOTHG	Pour quelle raison principale n’utilisez-vous pas la messagerie instantanée ?	2016
+	1- Vous ne connaissez pas ces applications ou vous ne savez pas vous en servir	
+	2- Vous ne pouvez pas vous en servir (pas le terminal adapté ou le forfait nécessaire)	
+	3- Pour des problèmes de confidentialité et de protection des données	
+	4- Vous ne trouvez pas ça utile	
+	5- Autre raison	
+	6- Ne sait pas / Ne répond pas	
+WHYNOTMOBINTER	Pourquoi ne vous connectez-vous pas à internet avec votre mobile ?	2009
+	1- Votre mobile ne vous permet pas d'aller sur internet	
+	2- C'est trop compliqué	
+	3- Vous n'en ressentez pas le besoin	
+	4- Cela revient trop cher (équipement à acheter, abonnement, etc.)	
+	5- Cela ne marche pas bien : coupures, débit trop lent	
+	6- Autre raison	
+	7- Ne sait pas / Ne répond pas	
+WHYNOWEB	[2016] Pour quelle raison principale ne disposez-vous pas de connexion internet à domicile ?	2016
+	1- Les abonnements proposés sont trop chers	
+	2- La connexion mobile à internet est suffisante	
+	3- C'est trop compliqué à installer et à utiliser	
+	4- Là où vous habitez, la connexion n'est pas assez rapide / pas disponible	
+	5- Cela ne vous intéresse pas	
+	6- Autre raison	
+	7- Ne sait pas / Ne répond pas	
+WHYNOWEB2011	[2011] Pour quelle raison principale ne disposez-vous pas de connexion internet à domicile ?	2010 2011
+	1- Les abonnements proposés ou l'achat d'un terminal adéquat sont trop chers	
+	2- L'achat d'un ordinateur est trop coûteux	
+	3- C'est trop compliqué à installer et à utiliser	
+	4- Là où vous habitez, la connexion n'est pas assez rapide / pas disponible	
+	5- Cela ne vous intéresse pas	
+	6- Vous vous connectez dans d'autres lieux : travail, cyber café	
+	7- Autre raison	
+	8- Ne sait pas / Ne répond pas	
+WHYWEB	Pourquoi vous êtes-vous, à l'origine, équipé d'une connexion à internet à domicile ?	2010
+	1- Pour votre activité professionnelle ou vos études	
+	2- Pour vos loisirs	
+	3- Pour communiquer avec votre famille, vos amis	
+	4- Pour vos enfants	
+	5- Pour vos démarches de la vie quotidienne	
+	6- Pour une autre raison	
+	7- Ne sait pas / Ne répond pas	
+ZPD	Zone peu dense	2016
+	1- Habite en zone peu dense	
+	2- N'habite pas en zone peu dense	
