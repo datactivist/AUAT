@@ -42,7 +42,7 @@ class: center, middle
 
 Retrouvez les matériaux sur https://github.com/datactivist/AUAT
 
-Ces slides en ligne : http://datactivi.st/numa_R/AUAT
+Ces slides en ligne : http://datactivi.st/AUAT
 
 Pad collaboratif : https://frama.link/AUAT
 
@@ -389,17 +389,8 @@ pres2017T1_communes_long <- pres2017T1_communes_long %>%
 
 ```{r}
 pres2017T1_communes_long %>% 
-  gather(metrique, valeur, voix:exp) 
-```
-
----
-## Pivoter
-
-```{r}
-pres2017T1_communes_long %>% 
   gather(metrique, valeur, voix:exp) %>% 
-  unite(variable, candidat, metrique, sep = "_")
-
+  glimpse
 ```
 
 ---
@@ -409,7 +400,18 @@ pres2017T1_communes_long %>%
 pres2017T1_communes_long %>% 
   gather(metrique, valeur, voix:exp) %>% 
   unite(variable, candidat, metrique, sep = "_") %>% 
-  spread(variable, valeur)
+  glimpse
+```
+
+---
+## Pivoter
+
+```{r}
+pres2017T1_communes_long %>% 
+  gather(metrique, valeur, voix:exp) %>% 
+  unite(variable, candidat, metrique, sep = "_") %>% 
+  spread(variable, valeur) %>% 
+  glimpse
 ```
 
 ---
@@ -427,6 +429,217 @@ class: inverse, center, middle
 ```{r, echo = FALSE, out.width='90%', fig.align='center'}
 knitr::include_graphics("./img/pipeline.png")
 ```
+
+
+
+---
+class: center, middle, inverse
+
+## Évaluation
+
+## https://frama.link/eval-auat-1
+
+---
+class: center, middle, title
+background-image: url(./img/FraMauroDetailedMap.jpg)
+background-size: cover
+background-position: 50% 50%
+
+# Analyser ses données
+## R : le couteau suisse des données
+
+</BR>
+</BR>
+</BR>
+
+###  Joël Gombin, avec Endi Pons
+<img src="./img/Logo_DATACTIVIST_TW.png" height="100px" />
+
+.right[.footnote[<a href='https://commons.wikimedia.org/wiki/File:FraMauroDetailedMap.jpg'>source</a>]]
+
+---
+## Objectifs (jour 2)
+
+- Solidifier les acquis d'hier
+
+- Boîte à outils : le tidyverse (suite)
+
+- Les tidydata géographiques
+
+- Analyse uni- et bi-variées
+
+- Analyse multivariée (AGD)
+
+
+---
+## Exercices
+
+- Importer des données en CSV
+
+- sélectionner certaines lignes en fonction d'une condition logique
+
+- ajouter une nouvelle variable
+
+- agréger/résumer les données par groupe
+
+- trier le résultat
+
+- pivoter des données
+
+---
+## Recoder des données
+
+- `recode`
+
+- `case_when`
+
+---
+## Recoder des données
+
+```{r}
+suppressPackageStartupMessages(library(tidyverse))
+elections <- read_csv("data/Presidentielle_2017_Resultats_Communes_T1_clean.csv")
+```
+
+---
+## Recoder des données
+
+```{r}
+elections %>% 
+  mutate(region = case_when(
+  CodeDepartement %in% c("75", "77", "78", "91", "92", "93", "94", "95") ~ "Ile-de-France",
+  TRUE ~ "Province")) %>% 
+  glimpse
+```
+
+---
+## Fusionner des jeux de données
+
+- primary keys et foreign keys
+
+- `left_join`
+- `right_join`
+- `full_join`
+- `inner_join`
+- `semi_join`
+- `anti_join`
+
+---
+## Left join
+
+![](http://r4ds.had.co.nz/diagrams/join-setup.png)
+
+---
+## Left join
+
+![](http://r4ds.had.co.nz/diagrams/join-setup2.png)
+
+---
+## Inner join
+
+![](http://r4ds.had.co.nz/diagrams/join-inner.png)
+
+---
+## Outer join
+
+.reduite[.center[![](http://r4ds.had.co.nz/diagrams/join-outer.png)]]
+
+---
+## Semi join
+
+![](http://r4ds.had.co.nz/diagrams/join-semi.png)
+
+---
+## Anti join
+
+![](http://r4ds.had.co.nz/diagrams/join-anti.png)
+
+---
+## Exemple
+
+(source : https://www.insee.fr/fr/information/2114596)
+
+```{r}
+library(readxl)
+ZE2010 <- read_xls("./data/ZE2010 au 01-01-2017.xls", sheet = "Composition_communale", skip = 5)
+
+elections <- elections %>% 
+  left_join(ZE2010, by = c("CodeInsee" = "CODGEO")) %>% 
+  glimpse()
+```
+
+---
+## Exemple
+
+```{r}
+elections %>% 
+  group_by(ZE2010) %>% 
+  summarise_at(vars(Inscrits, Abstentions, Votants, Blancs, Nuls, Exprimés, `LE PEN`:CHEMINADE), funs(sum(.)))
+```
+
+---
+## Exemple
+
+```{r}
+elections %>% 
+  group_by(ZE2010) %>% 
+  summarise_at(vars(Inscrits, Abstentions, Votants, Blancs, Nuls, Exprimés, `LE PEN`:CHEMINADE), funs(sum(.))) %>% 
+  mutate_at(vars(`LE PEN`:CHEMINADE), funs(. / Inscrits * 100))
+```
+
+---
+## Exemple
+
+```{r}
+communesTM <- st_read("./data/communesTM.geojson") # https://data.toulouse-metropole.fr/explore/dataset/communes/
+elections %>% 
+  right_join(communesTM, by = c("CodeInsee" = "code_insee"))
+```
+
+
+---
+## À ne pas confondre : binding
+
+Ici il s'agit de juxtaposer des jeux de données 
+
+- `bind_rows`
+- `bind_cols`
+
+---
+## Tips & tricks dplyr
+
+```{r}
+ZE2010 %>% 
+  group_by(LIBZE2010) %>% 
+  summarise(n = n()) %>% 
+  arrange(desc(n))
+```
+
+---
+## Tips & tricks dplyr
+
+
+```{r}
+ZE2010 %>% 
+  count(LIBZE2010, sort = TRUE)
+```
+
+---
+## Tips & tricks dplyr
+
+Numéroter les communes par ordre décroissant de vote Le Pen dans le département
+
+```{r}
+elections %>% 
+  group_by(CodeDepartement) %>% 
+  arrange(desc(`LE PEN_exp`)) %>% 
+  mutate(numero = 1:n()) %>% 
+  ungroup %>% 
+  arrange(desc(`LE PEN_exp`)) %>% 
+  select(CodeInsee, Commune, Département, numero, `LE PEN_exp`)
+```
+
+
 
 ---
 class: center, middle, inverse
@@ -481,6 +694,7 @@ Peut exister en 2, 3, 4 dimensions.
 
 ```{r sf, echo = FALSE, hide=TRUE, cache=FALSE, message=FALSE}
 require(RPostgreSQL)
+require(pool)
 
 # récupérer les identifants (non stockés en clair)
 dw <- config::get("toulouse")
@@ -488,7 +702,7 @@ dw <- config::get("toulouse")
 driver <- dbDriver(dw$driver)
 
 # créer la connection à la BDD
-connection <- dbConnect(driver, dbname = dw$database,
+connection <- dbPool(driver, dbname = dw$database,
                         host = dw$server, port = dw$port,
                         user = dw$uid, password = dw$pwd)
 
@@ -501,8 +715,162 @@ dbGetQuery(connection, "SELECT id, ST_AsText(geom) AS geometry from nodes LIMIT 
 
 
 ---
+## Importer des données spatiales
+
+[Source](https://data.toulouse-metropole.fr/explore/dataset/quartiers-de-democratie-locale0/export/?location=12,43.60074,1.43283&basemap=jawg.streets)
+
+```{r}
+library(sf)
+quartiers <- st_read("./data/quartiers-de-democratie-locale0.shp") 
+
+```
+
+---
+## Importer des données spatiales
+
+```{r}
+glimpse(quartiers)
+```
+
+---
+## Importer des données spatiales
+
+```{r, include=FALSE}
+mapviewOptions(leafletWidth = 700, leafletHeight = 400)
+```
+
+
+```{r}
+library(mapview)
+mapview(quartiers)
+```
+
+---
+## Importer des données spatiales
+
+```{r}
+quartiers2 <- st_read("./data/quartiers-de-democratie-locale0.geojson") 
+
+```
+
+---
+## Importer des données spatiales
+
+```{r}
+glimpse(quartiers2)
+```
+
+---
+## Importer des données spatiales
+
+```{r, include=FALSE}
+mapviewOptions(leafletWidth = 700, leafletHeight = 400)
+```
+
+
+```{r}
+library(mapview)
+mapview(quartiers2)
+```
+
+---
+## Importer des données spatiales
+
+```{r}
+ways <- st_read_db(conn = connection, table = "ways", EWKB = TRUE)
+glimpse(ways)
+```
+
+---
+## Importer des données spatiales
+
+```{r}
+ways %>% 
+  filter(stringr::str_detect(tags, "pedestrian")) %>% 
+  mapview()
+```
+
+---
+## Importer des données spatiales 
+
+```{r}
+library(leaflet)
+leaflet() %>% addTiles() %>% setView(-93.65, 42.0285, zoom = 4) %>%
+  addWMSTiles(
+    "http://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r.cgi",
+    layers = "nexrad-n0r-900913",
+    options = WMSTileOptions(format = "image/png", transparent = TRUE),
+    attribution = "Weather data © 2012 IEM Nexrad"
+  )
+```
+
+
+---
 class: center, middle, inverse
+## Analyse uni- et bi-variées
 
-## Évaluation
+---
+## Analyses univariées 
 
-## https://frama.link/eval-auat-1
+Plusieurs approches possibles. Quels sont vos besoins ?
+
+Tidyverse => 
+
+```{r, eval=FALSE}
+
+df %>% 
+  group_by(mes_groupes) %>% 
+  summarise(mean = mean(ma_variable), median = median(ma_variable))
+
+df %>% 
+  group_by(mes_groupes) %>%
+  summarise_at(vars(varA, varB, varC), funs(mean = mean(.), median = median(.), max = max(.), min = min(.)), sd = sd(.))
+
+```
+
+---
+## Analyses bivariées 
+
+```{r}
+library(corrr)
+pres2017T1_communes %>% 
+  select(contains("_ins")) %>% 
+  correlate
+```
+
+---
+## Analyses bivariées 
+
+```{r}
+pres2017T1_communes %>% 
+  select(contains("_ins")) %>% 
+  correlate %>% 
+  focus(FILLON_ins, `LE PEN_ins`, MACRON_ins, MÉLENCHON_ins, mirror = TRUE) %>% 
+  rearrange(method = "HC", absolute = FALSE) %>%  # trier par corrélation
+  shave() %>% 
+  fashion()
+
+```
+
+---
+## Analyses bivariées 
+
+```{r}
+pres2017T1_communes %>% 
+  select(contains("_ins")) %>% 
+  correlate %>% 
+  rearrange(method = "HC", absolute = FALSE) %>%  # trier par corrélation
+  shave() %>% 
+  rplot()
+
+```
+
+---
+## Analyse multivariée (AGD)
+
+
+
+```{r, include=FALSE}
+poolClose(connection)
+```
+
