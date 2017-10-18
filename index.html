@@ -1383,7 +1383,7 @@ df %&gt;%
 ```
 
 ---
-## Analyses bivariées 
+## Analyses bivariées (corrélations)
 
 
 ```r
@@ -1421,7 +1421,7 @@ pres2017T1_communes %&gt;%
 ```
 
 ---
-## Analyses bivariées 
+## Analyses bivariées (corrélations)
 
 
 ```r
@@ -1443,7 +1443,7 @@ pres2017T1_communes %&gt;%
 ```
 
 ---
-## Analyses bivariées 
+## Analyses bivariées (corrélations)
 
 
 ```r
@@ -1459,6 +1459,73 @@ pres2017T1_communes %&gt;%
 
 ---
 ## Analyse multivariée (AGD)
+
+Le package à utiliser : [`FactoMineR`](http://factominer.free.fr/) - français, assez bien documenté
+
+
+```r
+library(FactoMineR)
+
+acp &lt;- pres2017T1_communes %&gt;% 
+  select(contains("_ins"), "Département") %&gt;% 
+  PCA(quali.sup = 17, graph = FALSE)
+
+acp
+```
+
+```
+## **Results for the Principal Component Analysis (PCA)**
+## The analysis was performed on 35496 individuals, described by 17 variables
+## *The results are available in the following objects:
+## 
+##    name               
+## 1  "$eig"             
+## 2  "$var"             
+## 3  "$var$coord"       
+## 4  "$var$cor"         
+## 5  "$var$cos2"        
+## 6  "$var$contrib"     
+## 7  "$ind"             
+## 8  "$ind$coord"       
+## 9  "$ind$cos2"        
+## 10 "$ind$contrib"     
+## 11 "$quali.sup"       
+## 12 "$quali.sup$coord" 
+## 13 "$quali.sup$v.test"
+## 14 "$call"            
+## 15 "$call$centre"     
+## 16 "$call$ecart.type" 
+## 17 "$call$row.w"      
+## 18 "$call$col.w"      
+##    description                                          
+## 1  "eigenvalues"                                        
+## 2  "results for the variables"                          
+## 3  "coord. for the variables"                           
+## 4  "correlations variables - dimensions"                
+## 5  "cos2 for the variables"                             
+## 6  "contributions of the variables"                     
+## 7  "results for the individuals"                        
+## 8  "coord. for the individuals"                         
+## 9  "cos2 for the individuals"                           
+## 10 "contributions of the individuals"                   
+## 11 "results for the supplementary categorical variables"
+## 12 "coord. for the supplementary categories"            
+## 13 "v-test of the supplementary categories"             
+## 14 "summary statistics"                                 
+## 15 "mean of the variables"                              
+## 16 "standard error of the variables"                    
+## 17 "weights for the individuals"                        
+## 18 "weights for the variables"
+```
+
+---
+## Analyse multivariée (AGD)
+
+
+```r
+library(explor)
+explor(acp)
+```
     </textarea>
 <script src="libs/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({

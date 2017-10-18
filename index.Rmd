@@ -829,7 +829,7 @@ df %>%
 ```
 
 ---
-## Analyses bivariées 
+## Analyses bivariées (corrélations)
 
 ```{r}
 library(corrr)
@@ -839,7 +839,7 @@ pres2017T1_communes %>%
 ```
 
 ---
-## Analyses bivariées 
+## Analyses bivariées (corrélations)
 
 ```{r}
 pres2017T1_communes %>% 
@@ -853,7 +853,7 @@ pres2017T1_communes %>%
 ```
 
 ---
-## Analyses bivariées 
+## Analyses bivariées (corrélations)
 
 ```{r}
 pres2017T1_communes %>% 
@@ -867,6 +867,27 @@ pres2017T1_communes %>%
 
 ---
 ## Analyse multivariée (AGD)
+
+Le package à utiliser : [`FactoMineR`](http://factominer.free.fr/) - français, assez bien documenté
+
+```{r}
+library(FactoMineR)
+
+acp <- pres2017T1_communes %>% 
+  select(contains("_ins"), "Département") %>% 
+  PCA(quali.sup = 17, graph = FALSE)
+
+acp
+
+```
+
+---
+## Analyse multivariée (AGD)
+
+```{r, eval = FALSE}
+library(explor)
+explor(acp)
+```
 
 
 
