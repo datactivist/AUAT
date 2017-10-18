@@ -1,6 +1,8 @@
 # inspiré de http://r-spatial.org/2017/07/14/Large_scale_OSM_in_R.html
 
-require(RPostgreSQL)
+library(RPostgreSQL)
+library(sf)
+library(tidyverse)
 
 # récupérer les identifants (non stockés en clair)
 dw <- config::get("toulouse")
@@ -25,7 +27,8 @@ bikepark <- points %>%
 bikepark %>% 
   mapview::mapview()
   
-lines <- dbGetQuery(connection, "SELECT * , ST_AsText(linestring) AS geom from ways")
+# lines <- dbGetQuery(connection, "SELECT * , ST_AsText(linestring) AS geom from ways")
+lines <- st_read_db(connection, "ways")
 lines <- lines %>% 
   select(-linestring) %>% 
   st_as_sf(wkt = "geom", crs = 4326)
@@ -39,12 +42,6 @@ streets <- lines %>%
 mapview::mapview(streets) + mapview::mapview(cycleways, color = "yellow")
 
 library(leaflet)
-
-icon <- awesomeIcons(
-  icon = "ios-bicycle", 
-  iconColor = "red", 
-  library = "ion"
-)
 
 leaflet() %>% 
   addProviderTiles(provider = "CartoDB.Positron") %>% 
