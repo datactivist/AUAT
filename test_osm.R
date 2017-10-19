@@ -15,7 +15,7 @@ connection <- dbConnect(driver, dbname = dw$database,
                         user = dw$uid, password = dw$pwd)
 dbListTables(connection)
 
-#LOAD POINT DATA FROM OSM DATABASE
+# Charger les données d'OSM
 points <- dbGetQuery(connection, "SELECT * , ST_AsText(geom) AS geometry from nodes")
 points <- points %>% 
   select(-geom) %>% 
