@@ -1309,6 +1309,36 @@ Voir [cet article](http://www.persee.fr/web/revues/home/prescript/article/espos_
 Un [moyen sympa](http://franceo3.geoclip.fr/index.php?profil=FV#z=-349737,6562730,1033057,513716;l=fr;i=euro14.pt_lfn;v=map12) de jouer avec les différentes méthodes de discrétisation.
 
 
+---
+## Et dans R ?
+
+- objets spatiaux : `sf`, comme vu hier
+- ainsi que le package `raster` pour toutes les données... raster
+
+---
+## Et dans R ?
+
+Explorer des données spatiales : `mapview`
+
+```{r, eval = FALSE}
+library(sf)
+library(mapview)
+departements <- st_read("./data/departements/DEPARTEMENT.shp",  stringsAsFactors = FALSE)
+mapview(departements)
+```
+
+```{r, echo = FALSE}
+library(sf)
+library(mapview)
+departements <- st_read("./data/departements/DEPARTEMENT.shp",  stringsAsFactors = FALSE)
+l4 <- mapview(departements)
+frameWidget(l4@map)
+```
+
+---
+## Et dans R ?
+
+Cartographier : `tmap`
 
 
 

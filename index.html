@@ -1906,6 +1906,45 @@ Un exemple d'utilisation par Todd et Le Bras :
 Voir [cet article](http://www.persee.fr/web/revues/home/prescript/article/espos_0755-7809_2000_num_18_1_1930)
 
 Un [moyen sympa](http://franceo3.geoclip.fr/index.php?profil=FV#z=-349737,6562730,1033057,513716;l=fr;i=euro14.pt_lfn;v=map12) de jouer avec les différentes méthodes de discrétisation.
+
+
+---
+## Et dans R ?
+
+- objets spatiaux : `sf`, comme vu hier
+- ainsi que le package `raster` pour toutes les données... raster
+
+---
+## Et dans R ?
+
+Explorer des données spatiales : `mapview`
+
+
+```r
+library(sf)
+library(mapview)
+departements &lt;- st_read("./data/departements/DEPARTEMENT.shp",  stringsAsFactors = FALSE)
+mapview(departements)
+```
+
+
+```
+## Reading layer `DEPARTEMENT' from data source `/media/Data/Dropbox/datactivi.st/AU Toulouse/Formation AUTA/data/departements/DEPARTEMENT.shp' using driver `ESRI Shapefile'
+## Simple feature collection with 96 features and 11 fields
+## geometry type:  MULTIPOLYGON
+## dimension:      XY
+## bbox:           xmin: 99226 ymin: 6049647 xmax: 1242375 ymax: 7110480
+## epsg (SRID):    NA
+## proj4string:    +proj=lcc +lat_1=44 +lat_2=49 +lat_0=46.5 +lon_0=3 +x_0=700000 +y_0=6600000 +ellps=GRS80 +units=m +no_defs
+```
+
+<div id="htmlwidget-5af719c98dfc65d843a2" style="width:100%;height:504px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5af719c98dfc65d843a2">{"x":{"url":"index_files/figure-html//widgets/widget_unnamed-chunk-47.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+
+---
+## Et dans R ?
+
+Cartographier : `tmap`
     </textarea>
 <script src="libs/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
