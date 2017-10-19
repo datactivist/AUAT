@@ -177,7 +177,7 @@ knitr::include_graphics("./img/pipeline.png")
 - raccourci pour exécuter une ligne de code : ctrl + entrée, pomme + entrée pour Mac
 
 ---
-## Scripts, litterate programming, reproducible research
+## Scripts, literate programming, reproducible research
 
 - toujours travailler dans le cadre d'un "projet"
 
@@ -187,7 +187,7 @@ knitr::include_graphics("./img/pipeline.png")
 
 - mieux : mêler texte et code au moyen de [fichiers Rmd](http://rmarkdown.rstudio.com/)
 
-- versionage (git)
+- versionnage (git)
 
 - notebook
 
@@ -697,13 +697,13 @@ Peut exister en 2, 3, 4 dimensions.
 require(RPostgreSQL)
 require(pool)
 
-# récupérer les identifants (non stockés en clair)
+# récupérer les identifiants (non stockés en clair)
 dw <- config::get("toulouse")
 # charger le driver PostGreSQL
 driver <- dbDriver(dw$driver)
 
-# créer la connection à la BDD
-connection <- dbPool(driver, dbname = dw$database,
+# créer la connexion à la BDD
+connexion <- dbPool(driver, dbname = dw$database,
                         host = dw$server, port = dw$port,
                         user = dw$uid, password = dw$pwd)
 
@@ -867,7 +867,7 @@ df %>%
 ```
 
 ---
-## Analyses bivariées (corrélations)
+## Analyses bivariées (correlations)
 
 ```{r}
 library(corrr)
@@ -877,14 +877,14 @@ pres2017T1_communes %>%
 ```
 
 ---
-## Analyses bivariées (corrélations)
+## Analyses bivariées (correlations)
 
 ```{r}
 pres2017T1_communes %>% 
   select(contains("_ins")) %>% 
   correlate %>% 
   focus(FILLON_ins, `LE PEN_ins`, MACRON_ins, MÉLENCHON_ins, mirror = TRUE) %>% 
-  rearrange(method = "HC", absolute = FALSE) %>%  # trier par corrélation
+  rearrange(method = "HC", absolute = FALSE) %>%  # trier par correlation
   shave() %>% 
   fashion()
 
@@ -897,7 +897,7 @@ pres2017T1_communes %>%
 pres2017T1_communes %>% 
   select(contains("_ins")) %>% 
   correlate %>% 
-  rearrange(method = "HC", absolute = FALSE) %>%  # trier par corrélation
+  rearrange(method = "HC", absolute = FALSE) %>%  # trier par correlation
   shave() %>% 
   rplot()
 
@@ -1115,7 +1115,7 @@ http://maps.stamen.com/watercolor/#12/48.8974/2.2017
 
 Comment stocker et représenter l'information géographique ?
 
-- "Mode raster" : il s'agit d'une image, découpée en pixels. Des valeurs sont attribués aux pixels. Ex : photo satellite.
+- "Mode raster" : il s'agit d'une image, découpée en pixels. Des valeurs sont attribuées aux pixels. Ex : photo satellite.
 - "Mode vecteur" : on utilise des objets géométriques (lignes, points, polygones...) auxquels sont associés des attributs. Ex : carte d'un réseau de transports.
 
 ---
@@ -1136,7 +1136,7 @@ Une carte choroplèthe est une carte thématique où les régions sont colorées
 ---
 ## Cartes en anamorphose ou cartogramme 
 
-"La cartographie en anamorphose a pour but d'adapter la forme de la carte non pas à la réalité physique mais plutôt à la réalité perçue." [(Langlois et Denain, 1996)](http://cybergeo.revues.org/129) 
+"La cartographie en anamorphose a pour but d'adapter la forme de la carte non pas à la réalité physique, mais plutôt à la réalité perçue." [(Langlois et Denain, 1996)](http://cybergeo.revues.org/129) 
 
 On déforme le fond de carte en fonction d'une variable quantitative (voire arbitrairement).
 
@@ -1148,7 +1148,7 @@ class: center, middle
 ---
 ## Le langage cartographique 
 
-[Bertin, 1965](http://classiques.uqac.ca/collection_methodologie/bertin_jacques/representations_visuelles_info/representations_visuelles_info_texte.html) : travail sur la sémiologie graphique. La carte, comme le graphique, permettent de percevoir *en même temps* trois informations (X,Y,Z).
+[Bertin, 1965](http://classiques.uqac.ca/collection_methodologie/bertin_jacques/representations_visuelles_info/representations_visuelles_info_texte.html) : travail sur la sémiologie graphique. La carte, comme le graphique, permet de percevoir *en même temps* trois informations (X,Y,Z).
 
 Mais pour que cette communication soit efficace, il faut respecter un langage précis et ses règles. 
 
@@ -1185,11 +1185,11 @@ Assez comparable à la grammaire des graphiques.
 
 - longueur/hauteur/surface/volume
 - bonne perception visuelle par l'œil
-- rapport de proportionnalité entre information quantitative représentée et la forme
+- rapport de proportionnalité entre informations quantitatives représentées et la forme
 - attention à respecter cette proportionnalité ! 
 - la taille est plus facile à estimer que la surface ou le volume
 
-Un exemple d'utilisation incorrecte (non-proportionnelle) de la taille :
+Un exemple d'utilisation incorrecte (non proportionnelle) de la taille :
 
 ---
 ## La taille 
@@ -1286,7 +1286,7 @@ Une autre coloration continue (pas très lisible parce qu'elle utilise trop de t
 ## L'orientation 
 
 - Angle d'un figuré linéaire
-- Pour variable qualitative, moins utilisé aujourd'hui
+- Pour variable qualitative, moins utilisée aujourd'hui
 
 ---
 ## L'orientation 
