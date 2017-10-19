@@ -1223,21 +1223,21 @@ http://hslpicker.com/
 
 - En général, on utilise un seul ton et on joue sur l'intensité.
 
-<iframe src='./img/grenobleAbstention.html' width='700px' height='600px'></iframe>
+<iframe src='./img/grenobleAbstention.html' width='600px' height='500px' style="border:none;"></iframe>
 
 ---
 ## La couleur
 
 - Parfois, par exemple pour représenter une variation, on peut jouer sur deux échelles de tons
 
-<iframe src='./img/amiensProgFN.html' width='700px' height='600px'></iframe>
+<iframe src='./img/amiensProgFN.html' width='600px' height='500px' style="border:none;"></iframe>
 
 ---
 ## La couleur
 
 - Si on représente une variable qualitative, on utilise autant de tons que de catégories
 
-<iframe src='./img/comm.couleur.html' width='700px' height='500px'></iframe>
+<iframe src='./img/comm.couleur.html' width='500px' height='400px' style="border:none;"></iframe>
 
 ---
 ## La couleur 
