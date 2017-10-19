@@ -25,7 +25,7 @@ departements <- communes %>%
   summarise()
   
 elections_dpt <- departements %>% 
-  left_join(as.data.frame(elections_dpt) %>% select(-geometry), by = c("codedpt" = "codedpt")) %>% 
+  left_join(as.data.frame(elections_dpt) %>% select(-geometry), by = c("codedpt" = "CodeDepartement")) %>% 
   left_join(as.data.frame(inscrits) %>% select(-geometry), by = c("codedpt" = "CodeDepartement"))
 
 library(tmap)
@@ -43,7 +43,7 @@ carte <- elections_dpt %>%
     tm_scale_bar(position = c("center", "bottom")) +
   tm_layout(title = "Ma première carte")
 
-tmap_leaflet(carte)
+t <- tmap_leaflet(carte)
 
 
 # avec cartography
@@ -52,3 +52,28 @@ library(cartography)
 elections_dpt %>% 
   filter(codedpt < 96) %>%
   choroLayer(var = "Abstentions_ins", method = "quantile", nclass = 7)
+
+# ggplot2 (version de dev)
+library(ggplot2)
+elections_dpt %>% 
+  filter(codedpt < 96) %>%
+  ggplot() +
+  geom_sf(aes(fill = Abstentions_ins)) +
+  theme_void()
+
+library(leaflet)
+
+elections_dpt %>% 
+  filter(codedpt < 96) %>%
+  st_transform(crs = 4326) %>% 
+  leaflet() %>% 
+  addTiles() %>% 
+  addPolygons(fillColor  = ~ colorQuantile("Reds", domain = Inscrits)(Inscrits), weight = 1, color = "grey", fillOpacity = 0.8) %>% 
+  addCircles(data = elections_dpt %>%   filter(codedpt < 96) %>%
+                     st_transform(crs = 4326) %>% 
+                     st_centroid(),
+                   radius = ~ sqrt(Inscrits)*3, weight = 10) %>% 
+  addLegend(pal = colorQuantile("Reds", domain = elections_dpt$Inscrits), values = ~Inscrits)
+
+library(mapedit)
+resultat <- editMap(mapview(departements))
