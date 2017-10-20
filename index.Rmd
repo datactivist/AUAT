@@ -703,7 +703,7 @@ dw <- config::get("toulouse")
 driver <- dbDriver(dw$driver)
 
 # créer la connexion à la BDD
-connexion <- dbPool(driver, dbname = dw$database,
+connection <- dbPool(driver, dbname = dw$database,
                         host = dw$server, port = dw$port,
                         user = dw$uid, password = dw$pwd)
 
@@ -1338,9 +1338,158 @@ frameWidget(l4@map)
 ---
 ## Et dans R ?
 
+Cartographier : `tmap`  
+
+```{r, message=FALSE}
+communes <- read_sf("./data/communes.geojson")
+elections <- read_csv("./data/Presidentielle_2017_Resultats_Communes_T1_clean.csv")
+elections <- communes %>% 
+  left_join(elections, by = c("INSEE_COM" = "CodeInsee"))
+
+departements <- elections %>%  # marche avec sf 0.5-5 et dplyr 0.7.4
+  group_by(NOM_DEP) %>% 
+  summarise_at(vars(contains("_ins")), funs(weighted.mean(., w = Inscrits, na.rm = TRUE)))
+departements <- left_join(departements,
+          elections %>% 
+            st_set_geometry(NULL) %>% 
+            group_by(NOM_DEP) %>% 
+            summarise(Inscrits = sum(Inscrits)),
+          by = "NOM_DEP"
+)
+
+```
+
+---
+## Et dans R ?
+
 Cartographier : `tmap`
 
+```{r, eval = FALSE}
+library(tmap)
+departements %>% 
+  tm_shape() +
+    tm_polygons(col = "Abstentions_ins", 
+    palette = "RdBu", n = 7, style = "jenks", 
+    title = "Abstention", textNA = "valeur manquante", 
+    legend.format = list(text.separator = "à"), 
+    auto.palette.mapping = FALSE)
+```
 
+---
+## Et dans R ?
+
+Cartographier : `tmap`
+
+```{r, echo = FALSE}
+library(tmap)
+departements %>% 
+  tm_shape() +
+    tm_polygons(col = "Abstentions_ins", 
+    palette = "RdBu", n = 7, style = "jenks", 
+    title = "Abstention", textNA = "valeur manquante", 
+    legend.format = list(text.separator = "à"), 
+    auto.palette.mapping = FALSE)
+```
+
+
+
+
+
+---
+## Et dans R ?
+
+Cartographier : `tmap`
+
+```{r, eval=FALSE}
+departements %>% 
+  st_transform(crs = 2154) %>% # back to Lambert93
+  tm_shape() +
+    tm_polygons(col = "Abstentions_ins", palette = "RdBu", n = 7, style = "jenks", title = "Abstention", textNA = "valeur manquante", legend.format = list(text.separator = "à"), auto.palette.mapping = FALSE) +
+    tm_bubbles(size = "Inscrits") +
+  tm_compass(position = c("right", "center")) +
+  tm_scale_bar(position = c("center", "bottom"))
+```
+
+---
+## Et dans R ?
+
+Cartographier : `tmap`
+
+```{r, echo=FALSE}
+departements %>% 
+  st_transform(crs = 2154) %>% # back to Lambert93
+  tm_shape() +
+    tm_polygons(col = "Abstentions_ins", palette = "RdBu", n = 7, style = "jenks", title = "Abstention", textNA = "valeur manquante", legend.format = list(text.separator = "à"), auto.palette.mapping = FALSE) +
+    tm_bubbles(size = "Inscrits") +
+  tm_compass(position = c("right", "center")) +
+  tm_scale_bar(position = c("center", "bottom"))
+```
+
+---
+## Et dans R ?
+
+Cartographier : `tmap`
+
+```{r, eval = FALSE}
+departements %>% 
+  st_transform(crs = 2154) %>% # back to Lambert93
+  tm_shape() +
+    tm_polygons(col = "Abstentions_ins", palette = "RdBu", n = 7, style = "jenks", title = "Abstention", textNA = "valeur manquante", legend.format = list(text.separator = "à"), auto.palette.mapping = FALSE) +
+    tm_bubbles(size = "Inscrits", scale = 2) +
+  tm_compass(position = c("right", "center")) +
+  tm_scale_bar(position = c("center", "bottom")) +
+tm_style_cobalt()
+```
+
+---
+## Et dans R ?
+
+Cartographier : `tmap`
+
+```{r, echo = FALSE}
+departements %>% 
+  st_transform(crs = 2154) %>% # back to Lambert93
+  tm_shape() +
+    tm_polygons(col = "Abstentions_ins", palette = "RdBu", n = 7, style = "jenks", title = "Abstention", textNA = "valeur manquante", legend.format = list(text.separator = "à"), auto.palette.mapping = FALSE) +
+    tm_bubbles(size = "Inscrits", scale = 2) +
+  tm_compass(position = c("right", "center")) +
+  tm_scale_bar(position = c("center", "bottom")) +
+tm_style_cobalt()
+``` 
+
+---
+## Et dans R ? 
+
+Passer en leaflet :
+  
+```{r, eval = FALSE}
+t <- departements %>% 
+  st_transform(crs = 2154) %>% # back to Lambert93
+  tm_shape() +
+    tm_polygons(col = "Abstentions_ins", palette = "RdBu", n = 7, style = "jenks", title = "Abstention", textNA = "valeur manquante", legend.format = list(text.separator = "à"), auto.palette.mapping = FALSE) +
+    tm_bubbles(size = "Inscrits", scale = 2) +
+  tm_compass(position = c("right", "center")) +
+  tm_scale_bar(position = c("center", "bottom"))
+tmap_leaflet(t)
+``` 
+
+
+---
+## Et dans R ? 
+
+Passer en leaflet :
+  
+```{r, echo = FALSE}
+t <- departements %>% 
+  st_transform(crs = 2154) %>% # back to Lambert93
+  tm_shape() +
+    tm_polygons(col = "Abstentions_ins", palette = "RdBu", n = 7, style = "jenks", title = "Abstention", textNA = "valeur manquante", legend.format = list(text.separator = "à"), auto.palette.mapping = FALSE) +
+    tm_bubbles(size = "Inscrits", scale = 2) +
+  tm_compass(position = c("right", "center")) +
+  tm_scale_bar(position = c("center", "bottom"))
+t2 <- tmap_leaflet(t)
+frameWidget(t2)
+``` 
 
 
 ```{r, include=FALSE}
