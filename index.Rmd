@@ -16,7 +16,7 @@ output:
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
-knitr::opts_chunk$set(cache = TRUE)
+knitr::opts_chunk$set(cache = TRUE, widgetframe_widgetsdir = 'widgets')
 ```
 
 class: center, middle, title
@@ -1457,39 +1457,437 @@ departements %>%
 tm_style_cobalt()
 ``` 
 
----
-## Et dans R ? 
 
-Passer en leaflet :
-  
+
+---
+## Et dans R ?
+
+Avec `cartography`: 
+
 ```{r, eval = FALSE}
-t <- departements %>% 
-  st_transform(crs = 2154) %>% # back to Lambert93
-  tm_shape() +
-    tm_polygons(col = "Abstentions_ins", palette = "RdBu", n = 7, style = "jenks", title = "Abstention", textNA = "valeur manquante", legend.format = list(text.separator = "à"), auto.palette.mapping = FALSE) +
-    tm_bubbles(size = "Inscrits", scale = 2) +
-  tm_compass(position = c("right", "center")) +
-  tm_scale_bar(position = c("center", "bottom"))
-tmap_leaflet(t)
-``` 
+library(cartography)
+departements %>% 
+  choroLayer(var = "Abstentions_ins", method = "quantile", nclass = 7)
+```
+
+---
+## Et dans R ?
+
+Avec `cartography`: 
+
+```{r, echo = FALSE, message=FALSE}
+library(cartography)
+departements %>% 
+  choroLayer(var = "Abstentions_ins", 
+             method = "quantile", 
+             nclass = 7)
+```
+
+---
+## Et dans R ?
+
+```{r, eval = FALSE}
+# ggplot2 (version de dev)
+library(ggplot2)
+departements %>% 
+  st_transform(crs = 2154) %>% 
+  ggplot() +
+  geom_sf(aes(fill = Abstentions_ins)) +
+  theme_bw()
+
+```
+
+---
+## Et dans R ?
+
+```{r, echo = FALSE}
+# ggplot2 (version de dev)
+library(ggplot2)
+departements %>% 
+  st_transform(crs = 2154) %>% 
+  ggplot() +
+  geom_sf(aes(fill = Abstentions_ins)) +
+  theme_bw()
+
+```
+
+---
+## Et dans R ?
+
+Avec Leaflet
+
+```{r, eval = FALSE}
+library(leaflet)
+
+departements %>% 
+  leaflet() %>% 
+  addTiles() %>% 
+  addPolygons(fillColor  = ~ colorQuantile("Reds", 
+  domain = Inscrits)(Inscrits), 
+  weight = 1, 
+  color = "grey", 
+  fillOpacity = 0.8) %>% 
+  addCircles(data = departements %>% st_centroid(),
+             radius = ~ sqrt(Inscrits)*30, weight = 10) %>% 
+  addLegend(pal = colorQuantile("Reds", domain = departements$Inscrits), 
+            values = ~Inscrits)
+
+```
+
+---
+class: inverse, middle, center
+
+
+# Analyse, modélisation, machine learning
+
+---
+## Que fait-on une fois qu'on a des données ?
+
+- Exploratory Data Analysis (Tukey, 1977) : pas d'hypothèse préalable à tester, plutôt pour générer des hypothèses. Rôle de la datavisualisation 
+
+- test d'hypothèse
+
+---
+## Que fait-on une fois qu'on a des données ?
+
+.reduite[.center[![](./img/test.png)]]
+
+---
+## Que fait-on une fois qu'on a des données ?
+
+- Exploratory Data Analysis (Tukey, 1977) : pas d'hypothèse préalable à tester, plutôt pour générer des hypothèses. Rôle de la datavisualisation 
+
+- test d'hypothèse
+
+- **modèle**
+
+---
+## Pourquoi modéliser ?
+
+.reduite[.center[![](./img/Hibbs.jpg)]]
+
+---
+## Pourquoi modéliser ?
+
+- pour analyser et expliquer
+
+- pour prédire
+
+---
+## Modéliser pour analyser
+
+- un modèle réduit de la réalité
+
+- isoler le rôle de chaque variable
+
+- raisonner "toutes choses égales par ailleurs" (_ceteris paribus_)
+
+---
+## Modéliser pour analyser
+
+Modéliser, c’est mettre en relation une *variable expliquée*
+(dépendante / prédite) et une ou plusieurs *variables explicatives*
+(indépendantes / prédicteurs).
+
+$$ Y = f(X_1, X_2, X_3, ..., X_n) $$
+
+L’estimation du modèle consiste à estimer la valeur des paramètres
+(ou coefficients). Le cas du modèle linéaire :
+
+$$ Y = α + β_1X_1 + β_2X_2 + β_3X_3 + · · · + β_nX_n + ε $$
+
+---
+## Modéliser pour analyser
+
+Implique de faire des hypothèses sur la spécification du modèle :
+
+- variables explicatives
+
+- distribution des erreurs
+
+---
+## Les distributions
+
+- distribution théorique (ex : distribution normale)
+
+- distribution empirique
+
+http://shiny.stat.calpoly.edu/Prob_View/
+
+---
+## All models are wrong, some are useful
+
+> Since all models are wrong the scientist cannot obtain a "correct" one by excessive elaboration. On the contrary following William of Occam he should seek an economical description of natural phenomena. 
+
+[George Box](https://dx.doi.org/10.1080%2F01621459.1976.10480949)
+
+---
+## All models are wrong, some are useful
+
+.reduite[.center[![](./img/ockham.jpg)]]
+
+---
+## Estimation d'un modèle
+
+Dans le cas d'un modèle linéaire => méthode des moindres carrés ordinaires (MCO/OLS)
+
+http://setosa.io/ev/ordinary-least-squares-regression/
+
+---
+## Attention !
+
+- Les modèles de régression linéaire supposent que les relations
+sont *linéaires* et *additives*.
+
+- Les *résidus* sont supposés être *normalement distribués*.
+
+- Les coefficients ne sont *pas standardisés* (on ne peut pas les
+comparer entre eux).
+
+- Les coefficients s’interprètent *relativement à l’unité de la variable dépendante*.
+
+---
+## Attention !
+
+- Les coefficients estiment l’effet d’une variable indépendante
+sur la variable dépendante *toutes choses égales par ailleurs*,
+c’est-à-dire en neutralisant l’effet des autres variables.
+
+- La qualité globale du modèle peut être quantifié au travers du
+$R^2$, qui représente la part de variance (de la variable
+dépendante) expliquée.
+
+- Pour les variables indépendantes catégoriques, on estime un
+coefficient par modalité, à l’exception de la première
+(baseline).
+
+---
+## Modèles statistiques
+
+Compromis entre intelligibilité et fidélité aux données
+
+---
+## Underfitting et overfitting
+
+.reduite[.center[![](./img/underfit.png)]]
+
+---
+## Underfitting et overfitting
+
+- différencier données d'apprentissage et données de test 
+
+- n'utiliser les données de confirmation (test) qu'une fois 
+
+---
+## Extrapolation
+
+[.reduite[.center[![](./img/sinus.png)]]](http://r4ds.had.co.nz/model-basics.html)
+
+---
+## Et le machine learning alors ?
+
+- Fondamentalement, modélisation et machine learning ne sont pas différents, du point de vue d'un statisticien : modéliser un $Y$ en fonction d'un vecteur de $X_i$
+
+- une des différences principales toutefois : veut-on prévoir ou comprendre/analyser ?
+
+- et donc : peut-on, veut-on interpréter les coefficients ?
+
+- en pratique : machine learning porte généralement sur des données plus complexes que la modélisation traditionnelle
+
+- souvent beaucoup de valeurs manquantes 
+
+---
+## Et le machine learning alors ?
+
+.reduite[.center[![](./img/ratings.png)]]
+
+---
+## Concepts de machine learning
+
+- Apprentissage supervisé vs non supervisé 
+
+- Apprentissage supervisé : il faut des données déjà classées/étalonnées. Souvent à la main ! => *#digitallabour*
+
+---
+## Apprentissage supervisé 
+
+[.reduite[.center[![](./img/captcha.jpg)]]](https://fakecaptcha.com)
+
+---
+## Apprentissage supervisé
+
+[.reduite[.center[![](./img/opensolarmap.png)]]](https://cquest.hackpad.com/OpenSolarMap-9oMiYswLksF)
+
+---
+## Apprentissage supervisé
+
+[.reduite[.center[![](./img/inbox.png)]]](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/36955.pdf)
+
+---
+## Apprentissage non supervisé 
+
+
+- problème majeur : réduction de la dimensionnalité
+
+- jeux de données à très haute dimensionnalité : impossible à explorer visuellement. Comment simplifier l'information et la résumer ?
+
+.reduite[.center[![](./img/house.png)]]
+
+---
+## Apprentissage non supervisé 
+
+https://gallery.shinyapps.io/LDAelife/
+
+---
+class: class: inverse, center, middle
+
+# Quelques algorithmes notoires
+
+---
+## Apprentissage supervisé
+
+- la régression (linéaire, logistique, LOESS...), éventuellement régularisée (Ridge, LASSO...)
+
+- les arbres de décision
+
+- Naive Bayes (indépendance des attributs)
+
+- Réseau bayésien (graphe de corrélation entre variables, inclut des _priors_)
+
+- réseau de neurones (perceptron, back-propagation, Hopfield network...)
+
+- Deep learning
+
+- Random forest, Boosting, Gradient Boosting
+
+- Support vector machine
+
+- etc. 
+
+---
+## Apprentissage non supervisé
+
+- clustering : k-means, k-medians, CAH... 
+
+- réduction de la dimensionnalité : ACP, analyse géométrique des données, MDS, LDA topic clustering...
+
+- analyses de réseau
+
+- word2vec
+
+- etc.
+
+---
+## Apprentissage non supervisé
+
+[Word2vec](https://www.tensorflow.org/tutorials/word2vec) :
+
+.reduite[.center[![](./img/word2vec.png)]]
 
 
 ---
-## Et dans R ? 
+## Le cas du deep learning
 
-Passer en leaflet :
-  
-```{r, echo = FALSE}
-t <- departements %>% 
-  st_transform(crs = 2154) %>% # back to Lambert93
-  tm_shape() +
-    tm_polygons(col = "Abstentions_ins", palette = "RdBu", n = 7, style = "jenks", title = "Abstention", textNA = "valeur manquante", legend.format = list(text.separator = "à"), auto.palette.mapping = FALSE) +
-    tm_bubbles(size = "Inscrits", scale = 2) +
-  tm_compass(position = c("right", "center")) +
-  tm_scale_bar(position = c("center", "bottom"))
-t2 <- tmap_leaflet(t)
-frameWidget(t2)
-``` 
+Comment apprendre à un ordinateur à lire ?
+
+![largeur](./img/digits.png)
+
+---
+## Le cas du deep learning
+
+.reduite[.center[![](./img/mnist_100_digits.png)]]
+
+---
+## Le cas du deep learning
+
+Un perceptron
+
+.reduite[.center[![](./img/perceptron.png)]]
+
+---
+## Le cas du deep learning
+
+.reduite[.center[![](./img/smallnetwork.png)]]
+
+---
+## Le cas du deep learning
+
+Une sigmoïde
+
+.reduite[.center[![](./img/sigmoid.png)]]
+
+---
+## Le cas du deep learning
+
+.reduite[.center[![](./img/layers.png)]]
+
+---
+## Le cas du deep learning
+
+.reduite[.center[![](./img/number.gif)]]
+
+---
+## Le cas du deep learning
+
+.reduite[.center[![](./img/hiddenlayer.png)]]
+
+---
+## Le cas du deep learning
+
+Le gradient descent
+
+.reduite[.center[![](./img/valley_with_ball.png)]]
+
++ backpropagation
+
+---
+## Le cas du deep learning
+
+http://chifeng.scripts.mit.edu/stuff/mcmc-demo/#HamiltonianMC,squiggle
+
+---
+## Le cas du deep learning
+
+http://playground.tensorflow.org/
+
+---
+## Le cas du deep learning
+
+Décompose un problème complexe (reconnaissance faciale, par exemple) en un grand nombre de problèmes simples => beaucoup de couches cachées => **abstraction**
+
+
+---
+## Les points auxquels prêter attention
+
+- feature selection
+
+- régularisation
+
+- qualité du critère d'optimisation
+
+- qualité de la distance/métrique retenue
+
+- qualité des données d'input (GIGO)
+
+- ...
+
+---
+class: inverse, center, middle
+
+## Evaluation
+
+# https://frama.link/auat_eval
+
+---
+class: inverse, center, middle
+
+## Merci !
+
+# Et à votre disposition
+
+[joel@datactivi.st](mailto:joel@datactivi.st)
+
+https://github.com/datactivist/helpR (version alpha !)
 
 
 ```{r, include=FALSE}
